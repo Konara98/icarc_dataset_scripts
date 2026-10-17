@@ -1,0 +1,10 @@
+scenario,split,demand_files,vehicles_min,vehicles_max,vehicles_total,real_hour_vehicles
+cologne1,train,20,1599,2434,40290,2015
+cologne1,val,5,1613,2422,10045,2015
+cologne1,test,10,1390,2649,20156,2015
+ingolstadt1,train,20,1357,2076,34293,1716
+ingolstadt1,val,5,1378,2066,8567,1716
+ingolstadt1,test,10,1192,2268,17182,1716
+cologne3,train,20,2261,3458,57233,2856
+cologne3,val,5,2291,3431,14258,2856
+cologne3,test,10,1970,3754,28569,2856
