@@ -1,0 +1,112 @@
+[cologne1 ddqn_64x64_variants seed0] ep 1/200 cologne1_x1.1_v0.rou.xml: total wait 502.1 s, reward -208.1, 12 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 2/200 cologne1_x1.1_v1.rou.xml: total wait 387.6 s, reward -418.2, 25 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 3/200 cologne1_x0.8_v1.rou.xml: total wait 172.2 s, reward -62.6, 33 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 4/200 cologne1_x1.0_v0.rou.xml: total wait 268.9 s, reward -41.8, 44 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 5/200 cologne1_x1.1_v3.rou.xml: total wait 249.1 s, reward -114.3, 56 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 6/200 cologne1_x0.9_v2.rou.xml: total wait 89.1 s, reward -49.8, 65 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 7/200 cologne1_x1.2_v3.rou.xml: total wait 213.1 s, reward -97.3, 76 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 8/200 cologne1_x0.9_v0.rou.xml: total wait 53.4 s, reward -3.3, 84 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 9/200 cologne1_x0.9_v3.rou.xml: total wait 73.1 s, reward -13.8, 92 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 10/200 cologne1_x0.9_v1.rou.xml: total wait 76.5 s, reward -3.9, 100 s elapsed
+[cologne1 ddqn_64x64_variants seed0] validation after ep 10: total wait 61.0 s  <- best so far, saved
+[cologne1 ddqn_64x64_variants seed0] ep 11/200 cologne1_x1.0_v1.rou.xml: total wait 68.9 s, reward -6.1, 131 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 12/200 cologne1_x0.8_v3.rou.xml: total wait 48.1 s, reward -4.8, 139 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 13/200 cologne1_x0.8_v2.rou.xml: total wait 40.8 s, reward -0.2, 148 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 14/200 cologne1_x1.0_v3.rou.xml: total wait 51.8 s, reward -3.2, 157 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 15/200 cologne1_x1.2_v1.rou.xml: total wait 83.1 s, reward -19.2, 170 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 16/200 cologne1_x0.8_v0.rou.xml: total wait 50.4 s, reward -7.2, 180 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 17/200 cologne1_x1.1_v2.rou.xml: total wait 66.9 s, reward -3.9, 189 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 18/200 cologne1_x1.2_v0.rou.xml: total wait 118.2 s, reward -5.9, 200 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 19/200 cologne1_x1.2_v2.rou.xml: total wait 85.7 s, reward -11.2, 212 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 20/200 cologne1_x1.0_v2.rou.xml: total wait 60.2 s, reward -8.9, 224 s elapsed
+[cologne1 ddqn_64x64_variants seed0] validation after ep 20: total wait 51.2 s  <- best so far, saved
+[cologne1 ddqn_64x64_variants seed0] ep 21/200 cologne1_x1.0_v1.rou.xml: total wait 47.5 s, reward -2.0, 273 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 22/200 cologne1_x0.8_v3.rou.xml: total wait 38.4 s, reward -5.3, 283 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 23/200 cologne1_x0.8_v2.rou.xml: total wait 30.7 s, reward -4.5, 292 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 24/200 cologne1_x1.0_v2.rou.xml: total wait 50.6 s, reward -3.8, 309 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 25/200 cologne1_x1.1_v3.rou.xml: total wait 74.5 s, reward -13.8, 322 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 26/200 cologne1_x1.0_v0.rou.xml: total wait 54.2 s, reward -7.6, 334 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 27/200 cologne1_x0.8_v1.rou.xml: total wait 34.1 s, reward -3.7, 347 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 28/200 cologne1_x0.9_v1.rou.xml: total wait 47.7 s, reward -7.8, 357 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 29/200 cologne1_x0.9_v2.rou.xml: total wait 40.3 s, reward -5.7, 367 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 30/200 cologne1_x1.1_v0.rou.xml: total wait 57.7 s, reward -3.5, 379 s elapsed
+[cologne1 ddqn_64x64_variants seed0] validation after ep 30: total wait 63.7 s
+[cologne1 ddqn_64x64_variants seed0] ep 31/200 cologne1_x1.2_v3.rou.xml: total wait 79.0 s, reward -11.9, 423 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 32/200 cologne1_x1.2_v2.rou.xml: total wait 106.9 s, reward -22.5, 434 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 33/200 cologne1_x0.9_v3.rou.xml: total wait 28.3 s, reward -2.7, 442 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 34/200 cologne1_x1.1_v2.rou.xml: total wait 77.7 s, reward -4.7, 451 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 35/200 cologne1_x0.9_v0.rou.xml: total wait 48.1 s, reward -0.2, 459 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 36/200 cologne1_x1.2_v1.rou.xml: total wait 907.0 s, reward -1837.7, 477 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 37/200 cologne1_x0.8_v0.rou.xml: total wait 28.0 s, reward -1.1, 484 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 38/200 cologne1_x1.2_v0.rou.xml: total wait 143.7 s, reward -108.9, 495 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 39/200 cologne1_x1.0_v3.rou.xml: total wait 112.1 s, reward -2.7, 506 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 40/200 cologne1_x1.1_v1.rou.xml: total wait 85.4 s, reward -3.7, 518 s elapsed
+[cologne1 ddqn_64x64_variants seed0] validation after ep 40: total wait 83.5 s
+[cologne1 ddqn_64x64_variants seed0] ep 41/200 cologne1_x0.8_v2.rou.xml: total wait 27.1 s, reward -0.5, 562 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 42/200 cologne1_x1.1_v0.rou.xml: total wait 593.4 s, reward -1728.8, 580 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 43/200 cologne1_x0.8_v0.rou.xml: total wait 30.0 s, reward -4.7, 592 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 44/200 cologne1_x1.1_v3.rou.xml: total wait 41.5 s, reward -1.5, 604 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 45/200 cologne1_x1.0_v2.rou.xml: total wait 35.7 s, reward -1.6, 614 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 46/200 cologne1_x0.8_v3.rou.xml: total wait 39.2 s, reward -3.4, 621 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 47/200 cologne1_x1.0_v3.rou.xml: total wait 68.5 s, reward -323.8, 631 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 48/200 cologne1_x0.9_v1.rou.xml: total wait 30.4 s, reward -3.0, 639 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 49/200 cologne1_x1.1_v1.rou.xml: total wait 96.0 s, reward -7.6, 649 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 50/200 cologne1_x0.8_v1.rou.xml: total wait 31.5 s, reward -2.7, 656 s elapsed
+[cologne1 ddqn_64x64_variants seed0] validation after ep 50: total wait 48.1 s  <- best so far, saved
+[cologne1 ddqn_64x64_variants seed0] ep 51/200 cologne1_x1.1_v2.rou.xml: total wait 60.3 s, reward -2.0, 694 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 52/200 cologne1_x1.0_v1.rou.xml: total wait 42.1 s, reward -3.4, 706 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 53/200 cologne1_x1.0_v0.rou.xml: total wait 48.6 s, reward -42.4, 716 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 54/200 cologne1_x0.9_v2.rou.xml: total wait 30.6 s, reward -0.2, 726 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 55/200 cologne1_x1.2_v0.rou.xml: total wait 60.8 s, reward -5.0, 739 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 56/200 cologne1_x0.9_v0.rou.xml: total wait 43.7 s, reward -15.0, 750 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 57/200 cologne1_x0.9_v3.rou.xml: total wait 35.3 s, reward -1.7, 760 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 58/200 cologne1_x1.2_v1.rou.xml: total wait 1390.9 s, reward -1837.6, 780 s elapsed
+[cologne1 ddqn_64x64_variants seed0] ep 59/200 cologne1_x1.2_v3.rou.xml: total wait 60.9 s, reward -4.5, 792 s elapsed
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 140, in <module>
+    main()
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 124, in main
+    model.learn(total_timesteps=a.episodes * C.steps_per_episode(s) * venv.num_envs)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\dqn\dqn.py", line 272, in learn
+    return super().learn(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\off_policy_algorithm.py", line 354, in learn
+    self.train(batch_size=self.batch_size, gradient_steps=gradient_steps)
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 339, in train
+    next_q_values = th.gather(self.q_net_target(replay_data.next_observations), 1, next_actions)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\dqn\policies.py", line 66, in forward
+    return self.q_net(self.extract_features(obs, self.features_extractor))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\container.py", line 259, in forward
+    input = module(input)
+    ^^^^^
+KeyboardInterrupt
+Exception ignored in atexit callback: <bound method finalize._exitfunc of <class 'weakref.finalize'>>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\weakref.py", line 666, in _exitfunc
+    f()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\library.py", line 674, in _del_library
+    m.reset()
+KeyboardInterrupt: 
+Exception ignored in atexit callback: <function shutdown at 0x00000194E7AB00E0>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 2252, in shutdown
+    def shutdown(handlerList=_handlerList):
+    
+KeyboardInterrupt: 

@@ -1,0 +1,114 @@
+[cologne1 dqn_64x64_variants seed2] ep 1/200 cologne1_x0.8_v1.rou.xml: total wait 185.3 s, reward -104.4, 6 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 2/200 cologne1_x0.8_v2.rou.xml: total wait 161.1 s, reward -53.5, 15 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 3/200 cologne1_x1.2_v2.rou.xml: total wait 435.6 s, reward -159.2, 29 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 4/200 cologne1_x1.0_v3.rou.xml: total wait 208.8 s, reward -22.3, 40 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 5/200 cologne1_x0.9_v1.rou.xml: total wait 135.1 s, reward -15.4, 50 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 6/200 cologne1_x1.2_v0.rou.xml: total wait 257.0 s, reward -67.0, 62 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 7/200 cologne1_x1.1_v0.rou.xml: total wait 92.6 s, reward -12.2, 71 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 8/200 cologne1_x1.0_v2.rou.xml: total wait 79.6 s, reward -31.8, 80 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 9/200 cologne1_x0.9_v0.rou.xml: total wait 85.0 s, reward -16.3, 87 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 10/200 cologne1_x1.1_v2.rou.xml: total wait 199.2 s, reward -10.2, 98 s elapsed
+[cologne1 dqn_64x64_variants seed2] validation after ep 10: total wait 621.2 s  <- best so far, saved
+[cologne1 dqn_64x64_variants seed2] ep 11/200 cologne1_x1.0_v1.rou.xml: total wait 149.5 s, reward -9.3, 144 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 12/200 cologne1_x0.8_v3.rou.xml: total wait 53.9 s, reward -1.2, 152 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 13/200 cologne1_x0.8_v0.rou.xml: total wait 41.2 s, reward -2.5, 160 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 14/200 cologne1_x1.1_v1.rou.xml: total wait 87.7 s, reward -10.4, 174 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 15/200 cologne1_x1.1_v3.rou.xml: total wait 84.3 s, reward -15.9, 184 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 16/200 cologne1_x1.2_v3.rou.xml: total wait 112.6 s, reward -6.0, 193 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 17/200 cologne1_x1.0_v0.rou.xml: total wait 62.6 s, reward -3.2, 204 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 18/200 cologne1_x1.2_v1.rou.xml: total wait 95.1 s, reward -6.6, 216 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 19/200 cologne1_x0.9_v2.rou.xml: total wait 64.0 s, reward -6.1, 231 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 20/200 cologne1_x0.9_v3.rou.xml: total wait 61.2 s, reward -5.7, 242 s elapsed
+[cologne1 dqn_64x64_variants seed2] validation after ep 20: total wait 76.8 s  <- best so far, saved
+[cologne1 dqn_64x64_variants seed2] ep 21/200 cologne1_x1.2_v0.rou.xml: total wait 131.2 s, reward -18.8, 292 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 22/200 cologne1_x1.0_v3.rou.xml: total wait 49.4 s, reward -5.0, 308 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 23/200 cologne1_x1.2_v1.rou.xml: total wait 82.3 s, reward -6.8, 323 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 24/200 cologne1_x1.1_v2.rou.xml: total wait 79.6 s, reward -8.7, 337 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 25/200 cologne1_x1.0_v0.rou.xml: total wait 64.4 s, reward -9.0, 350 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 26/200 cologne1_x1.2_v3.rou.xml: total wait 120.8 s, reward -13.6, 363 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 27/200 cologne1_x0.8_v0.rou.xml: total wait 43.9 s, reward -2.9, 374 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 28/200 cologne1_x1.1_v1.rou.xml: total wait 83.9 s, reward -10.9, 384 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 29/200 cologne1_x0.9_v1.rou.xml: total wait 47.2 s, reward -8.8, 396 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 30/200 cologne1_x0.9_v3.rou.xml: total wait 55.7 s, reward -6.8, 407 s elapsed
+[cologne1 dqn_64x64_variants seed2] validation after ep 30: total wait 53.1 s  <- best so far, saved
+[cologne1 dqn_64x64_variants seed2] ep 31/200 cologne1_x1.2_v2.rou.xml: total wait 126.7 s, reward -145.2, 444 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 32/200 cologne1_x0.9_v2.rou.xml: total wait 45.2 s, reward -2.2, 452 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 33/200 cologne1_x1.1_v3.rou.xml: total wait 106.2 s, reward -9.8, 462 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 34/200 cologne1_x0.9_v0.rou.xml: total wait 27.7 s, reward -0.3, 470 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 35/200 cologne1_x0.8_v1.rou.xml: total wait 27.9 s, reward -1.7, 477 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 36/200 cologne1_x1.0_v2.rou.xml: total wait 59.0 s, reward -6.4, 486 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 37/200 cologne1_x1.0_v1.rou.xml: total wait 46.7 s, reward -6.6, 494 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 38/200 cologne1_x1.1_v0.rou.xml: total wait 65.1 s, reward -2.5, 503 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 39/200 cologne1_x0.8_v2.rou.xml: total wait 26.2 s, reward -5.8, 512 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 40/200 cologne1_x0.8_v3.rou.xml: total wait 37.0 s, reward -3.3, 521 s elapsed
+[cologne1 dqn_64x64_variants seed2] validation after ep 40: total wait 72.3 s
+[cologne1 dqn_64x64_variants seed2] ep 41/200 cologne1_x0.8_v0.rou.xml: total wait 52.0 s, reward -6.4, 566 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 42/200 cologne1_x0.9_v1.rou.xml: total wait 54.0 s, reward -5.3, 576 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 43/200 cologne1_x1.0_v2.rou.xml: total wait 58.4 s, reward -3.3, 588 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 44/200 cologne1_x1.2_v2.rou.xml: total wait 104.7 s, reward -8.4, 603 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 45/200 cologne1_x0.9_v0.rou.xml: total wait 67.0 s, reward -77.2, 614 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 46/200 cologne1_x1.0_v0.rou.xml: total wait 64.2 s, reward -1.4, 623 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 47/200 cologne1_x1.1_v2.rou.xml: total wait 78.2 s, reward -8.7, 634 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 48/200 cologne1_x1.2_v0.rou.xml: total wait 87.0 s, reward -7.8, 644 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 49/200 cologne1_x1.1_v1.rou.xml: total wait 52.2 s, reward -2.7, 652 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 50/200 cologne1_x1.2_v1.rou.xml: total wait 86.3 s, reward -17.8, 663 s elapsed
+[cologne1 dqn_64x64_variants seed2] validation after ep 50: total wait 65.1 s
+[cologne1 dqn_64x64_variants seed2] ep 51/200 cologne1_x1.0_v3.rou.xml: total wait 37.7 s, reward -1.2, 705 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 52/200 cologne1_x0.8_v2.rou.xml: total wait 25.5 s, reward -1.5, 715 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 53/200 cologne1_x0.9_v3.rou.xml: total wait 40.1 s, reward -80.7, 724 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 54/200 cologne1_x0.9_v2.rou.xml: total wait 885.2 s, reward -1838.5, 745 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 55/200 cologne1_x0.8_v3.rou.xml: total wait 26.1 s, reward -6.7, 755 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 56/200 cologne1_x1.1_v3.rou.xml: total wait 60.3 s, reward -1.0, 765 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 57/200 cologne1_x1.0_v1.rou.xml: total wait 43.3 s, reward -2.7, 773 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 58/200 cologne1_x1.1_v0.rou.xml: total wait 45.6 s, reward -6.3, 782 s elapsed
+[cologne1 dqn_64x64_variants seed2] ep 59/200 cologne1_x0.8_v1.rou.xml: total wait 25.2 s, reward -0.0, 791 s elapsed
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 140, in <module>
+    main()
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 124, in main
+    model.learn(total_timesteps=a.episodes * C.steps_per_episode(s) * venv.num_envs)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\dqn\dqn.py", line 272, in learn
+    return super().learn(
+           ^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\off_policy_algorithm.py", line 354, in learn
+    self.train(batch_size=self.batch_size, gradient_steps=gradient_steps)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\dqn\dqn.py", line 196, in train
+    replay_data = self.replay_buffer.sample(batch_size, env=self._vec_normalize_env)  # type: ignore[union-attr]
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\buffers.py", line 298, in sample
+    return super().sample(batch_size=batch_size, env=env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\buffers.py", line 115, in sample
+    return self._get_samples(batch_inds, env=env)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\stable_baselines3\common\buffers.py", line 323, in _get_samples
+    self._normalize_reward(self.rewards[batch_inds, env_indices].reshape(-1, 1), env),
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+Exception ignored in atexit callback: <bound method finalize._exitfunc of <class 'weakref.finalize'>>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\weakref.py", line 666, in _exitfunc
+    f()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\weakref.py", line 590, in __call__
+    return info.func(*info.args, **(info.kwargs or {}))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\library.py", line 674, in _del_library
+    m.reset()
+KeyboardInterrupt: 
+Exception ignored in atexit callback: <function _exit_function at 0x000002252773ECA0>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\multiprocessing\util.py", line 320, in _exit_function
+    def _exit_function(info=info, debug=debug, _run_finalizers=_run_finalizers,
+    
+KeyboardInterrupt: 
+Exception ignored in atexit callback: <function shutdown at 0x0000022520D500E0>
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\logging\__init__.py", line 2271, in shutdown
+    h.flush()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_logging\_internal.py", line 1085, in flush
+    stream = self.stream
+             ^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\_logging\_internal.py", line 1078, in stream
+    @property
+
+KeyboardInterrupt: 

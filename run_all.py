@@ -4,16 +4,28 @@
   python run_all.py --scenarios cologne1 --algos dqn --net 16 16             # smaller network
   python run_all.py --scenarios cologne1 --algos dqn --train-set real        # ablation: real hour only
 
-A run that already has final_model.zip is skipped, so re-running after a crash
-or a reboot only does the missing runs. Each run's console output is saved as
+A run that already finished all its episodes is skipped, so re-running after a
+crash, a reboot or a Colab disconnect only does the missing runs (an unfinished
+run starts again from episode 1). Each run's console output is saved as
 train.out in its results folder.
 """
 import common as C
 
-import argparse, os, subprocess, sys, time
+import argparse, json, os, subprocess, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+
+
+def finished(out, episodes):
+    """A run counts as done only if it completed the requested number of episodes
+    (so a short pilot run with the same name is redone, not mistaken for a full run)."""
+    try:
+        with open(os.path.join(out, "config.json")) as fh:
+            c = json.load(fh)
+        return "finished" in c and c["episodes"] == episodes and os.path.exists(os.path.join(out, "final_model.zip"))
+    except (OSError, ValueError, KeyError):
+        return False
 
 
 def run(job, extra):
@@ -41,7 +53,7 @@ def main():
     a = ap.parse_args()
 
     jobs = [(s, algo, seed, a.net, a.train_set) for s in a.scenarios for algo in a.algos for seed in a.seeds]
-    todo = [j for j in jobs if not os.path.exists(os.path.join(C.run_dir(j[0], j[1], j[3], j[4], j[2]), "final_model.zip"))]
+    todo = [j for j in jobs if not finished(C.run_dir(j[0], j[1], j[3], j[4], j[2]), a.episodes)]
     print(f"{len(jobs)} runs, {len(jobs) - len(todo)} already finished, {len(todo)} to do, {a.workers} at a time")
     extra = ["--episodes", str(a.episodes), "--val-every", str(a.val_every)]
     failed = []

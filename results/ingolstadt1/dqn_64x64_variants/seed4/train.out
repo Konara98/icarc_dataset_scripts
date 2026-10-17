@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
+    import sumo as _sumo
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 30, in <module>
+    import importlib.metadata  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 17, in <module>
+    import inspect
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 145, in <module>
+    import ast
+  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 990, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 1086, in get_code
+  File "<frozen importlib._bootstrap_external>", line 1185, in get_data
+KeyboardInterrupt

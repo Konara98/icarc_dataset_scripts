@@ -1,0 +1,27 @@
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 31, in <module>
+    import torch as th
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 309, in <module>
+    _load_dll_libraries()
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 268, in _load_dll_libraries
+    if platform.machine() != "ARM64":
+       ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\platform.py", line 1022, in machine
+    return uname().machine
+           ^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\platform.py", line 920, in uname
+    release, version, csd, ptype = win32_ver()
+                                   ^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\platform.py", line 448, in win32_ver
+    version, csd, ptype, is_client = _win32_ver(version, csd, ptype)
+                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\platform.py", line 386, in _win32_ver
+    (version, product_type, ptype, spmajor, spminor)  = _wmi_query(
+                                                        ^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\platform.py", line 326, in _wmi_query
+    data = _wmi.exec_query("SELECT {} FROM {}".format(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

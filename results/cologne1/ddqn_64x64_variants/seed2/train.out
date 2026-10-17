@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 31, in <module>
+    import torch as th
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 2650, in <module>
+    from torch import _VF as _VF, functional as functional  # usort: skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\functional.py", line 8, in <module>
+    import torch.nn.functional as F
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\__init__.py", line 8, in <module>
+    from torch.nn.modules import *  # usort: skip # noqa: F403
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\__init__.py", line 1, in <module>
+    from .module import Module  # usort: skip
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 17, in <module>
+    from torch.utils._python_dispatch import is_traceable_wrapper_subclass
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\_python_dispatch.py", line 14, in <module>
+    import torchgen.model
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchgen\model.py", line 1400, in <module>
+    @dataclass(frozen=True)
+     ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 1256, in wrap
+    return _process_class(cls, init, repr, eq, order, unsafe_hash,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 1083, in _process_class
+    _set_new_attribute(cls, '__repr__', _repr_fn(flds, globals))
+                                        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 628, in _repr_fn
+    fn = _create_fn('__repr__',
+         ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 473, in _create_fn
+    exec(txt, globals, ns)
+  File "<string>", line 0, in <module>
+KeyboardInterrupt

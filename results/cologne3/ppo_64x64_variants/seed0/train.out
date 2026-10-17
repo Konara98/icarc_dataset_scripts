@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
+    import sumo as _sumo
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 30, in <module>
+    import importlib.metadata  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 7, in <module>
+    import pathlib
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\pathlib.py", line 263, in <module>
+    class _PathParents(Sequence):
+  File "<frozen abc>", line 106, in __new__
+KeyboardInterrupt

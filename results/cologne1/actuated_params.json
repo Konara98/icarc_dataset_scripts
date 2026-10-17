@@ -1,0 +1,54 @@
+{
+  "best": {
+    "max_gap": 2.0,
+    "max_scale": 3.0
+  },
+  "fixed_val_score": 29.432,
+  "grid": [
+    {
+      "max_gap": 2.0,
+      "max_scale": 1.5,
+      "val_score": 50.873200000000004
+    },
+    {
+      "max_gap": 2.0,
+      "max_scale": 2.0,
+      "val_score": 55.2644
+    },
+    {
+      "max_gap": 2.0,
+      "max_scale": 3.0,
+      "val_score": 45.1796
+    },
+    {
+      "max_gap": 3.0,
+      "max_scale": 1.5,
+      "val_score": 49.4452
+    },
+    {
+      "max_gap": 3.0,
+      "max_scale": 2.0,
+      "val_score": 49.0536
+    },
+    {
+      "max_gap": 3.0,
+      "max_scale": 3.0,
+      "val_score": 50.3852
+    },
+    {
+      "max_gap": 4.0,
+      "max_scale": 1.5,
+      "val_score": 50.0782
+    },
+    {
+      "max_gap": 4.0,
+      "max_scale": 2.0,
+      "val_score": 45.9244
+    },
+    {
+      "max_gap": 4.0,
+      "max_scale": 3.0,
+      "val_score": 48.553399999999996
+    }
+  ]
+}

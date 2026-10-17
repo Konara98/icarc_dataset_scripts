@@ -1,0 +1,3 @@
+episode,val_avg_total_wait,val_avg_trip,val_finished_pct,best,elapsed_s
+10,37.499,61.617,98.81,1,45
+20,139.33,154.177,91.53,0,103

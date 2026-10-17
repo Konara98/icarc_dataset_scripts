@@ -1,0 +1,47 @@
+Traceback (most recent call last):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 680, in children
+    return os.listdir(self.root or '.')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 3] The system cannot find the path specified: 'C:\\Users\\User\\AppData\\Local\\Programs\\Python\\Python312\\python312.zip'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
+    import sumo as _sumo
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 31, in <module>
+    __version__ = importlib.metadata.version(__name__)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 888, in version
+    return distribution(distribution_name).version
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 861, in distribution
+    return Distribution.from_name(distribution_name)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 397, in from_name
+    return next(cls.discover(name=name))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 795, in <genexpr>
+    path.search(prepared) for path in map(FastPath, paths)
+    ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 693, in search
+    return self.lookup(self.mtime).search(name)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_functools.py", line 80, in wrapper
+    return cached_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 703, in lookup
+    return Lookup(self)
+           ^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 713, in __init__
+    for child in path.children():
+                 ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 679, in children
+    with suppress(Exception):
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\contextlib.py", line 434, in __exit__
+    def __exit__(self, exctype, excinst, exctb):
+
+KeyboardInterrupt

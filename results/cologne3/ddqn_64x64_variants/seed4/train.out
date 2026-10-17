@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
+    import sumo as _sumo
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 30, in <module>
+    import importlib.metadata  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 8, in <module>
+    import zipfile
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 10, in <module>
+    import shutil
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 23, in <module>
+    import bz2
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\bz2.py", line 17, in <module>
+    from _bz2 import BZ2Compressor, BZ2Decompressor
+KeyboardInterrupt

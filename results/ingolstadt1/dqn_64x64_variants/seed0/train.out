@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
+    import sumo as _sumo
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 30, in <module>
+    import importlib.metadata  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 10, in <module>
+    import textwrap
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\textwrap.py", line 17, in <module>
+    class TextWrapper:
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\textwrap.py", line 107, in TextWrapper
+    sentence_end_re = re.compile(r'[a-z]'             # lowercase letter
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py", line 228, in compile
+    return _compile(pattern, flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py", line 307, in _compile
+    p = _compiler.compile(pattern, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py", line 747, in compile
+    code = _code(p, flags)
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py", line 580, in _code
+    _compile(code, p.data, flags)
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py", line 86, in _compile
+    charset, hascased = _optimize_charset(av, iscased, tolower, fixes)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py", line 327, in _optimize_charset
+    out.append((RANGE, (p, q - 1)))
+KeyboardInterrupt

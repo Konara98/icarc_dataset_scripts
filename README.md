@@ -88,6 +88,12 @@ This runs every controller on every test file:
 fixed, tuned actuated, random (5 seeds), and every trained run as FP32 and INT8.
 On a given test file all controllers use the same SUMO seed.
 
+**Known limitation:** even with a fixed seed, SUMO 1.27.1 is not perfectly repeatable on cologne1.
+The plain `sumo` command, run several times with identical arguments, gave either 30.0 s or 31.3 s
+(about 4%) for fixed-time on the real hour. cologne3 repeated exactly. This happens inside SUMO,
+not in these scripts. So judge differences by the spread across the 10 test files and 5 seeds;
+don't read meaning into a single-episode difference of a few percent. Mention this in the paper.
+
 ### Step G: hardware
 
     python measure_policy.py
@@ -107,6 +113,16 @@ this tiny.
 
 Each configuration gets its own folder (`<algo>_<net>_<train-set>`), so all of them appear
 side by side in the same summary table.
+
+### Running on Google Colab instead
+
+`colab/01_train.ipynb` (Steps E and H) and `colab/02_evaluate.ipynb` (Steps B, F and G) do the same work on Colab.
+In Colab use **File → Open notebook → GitHub** and paste this repository's URL.
+The notebooks clone this repository and install the same package versions. They save
+everything to `MyDrive/icarc_results`, so a disconnect loses at most the runs in progress.
+Choose a **CPU** runtime. A GPU does not help here: the time goes into the SUMO simulator,
+and the networks are too small to benefit. More CPU cores is what speeds things up.
+Colab is most useful running *alongside* the PC on different scenarios.
 
 ## 4. Reading the results
 
@@ -148,5 +164,6 @@ side by side in the same summary table.
 | `run_all.py` | runs many `train.py` jobs in parallel; skips finished ones |
 | `evaluate.py` | tunes actuated (`--tune-actuated`) and tests all controllers on all test files |
 | `measure_policy.py` | size and speed of trained policies, FP32 vs INT8 |
+| `colab/01_train.ipynb`, `colab/02_evaluate.ipynb` | the same steps on Google Colab, with results in Google Drive |
 | `make_splits.py`, `inspect_scenarios.py`, `inspect_network.py` | data preparation and description |
 | `baselines.py`, `time_episodes.py`, `train_dqn.py` | older first versions, replaced by `evaluate.py` and `train.py` |

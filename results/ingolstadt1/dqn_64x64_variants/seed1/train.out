@@ -1,0 +1,40 @@
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
+    import sumo as _sumo
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 30, in <module>
+    import importlib.metadata  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 17, in <module>
+    import inspect
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 151, in <module>
+    import linecache
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\linecache.py", line 11, in <module>
+    import tokenize
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\tokenize.py", line 40, in <module>
+    blank_re = re.compile(br'^[ \t\f]*(?:[#\r\n]|$)', re.ASCII)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py", line 228, in compile
+    return _compile(pattern, flags)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\__init__.py", line 307, in _compile
+    p = _compiler.compile(pattern, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_compiler.py", line 743, in compile
+    p = _parser.parse(p, flags)
+        ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_parser.py", line 972, in parse
+    p = _parse_sub(source, state, flags & SRE_FLAG_VERBOSE, 0)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_parser.py", line 453, in _parse_sub
+    itemsappend(_parse(source, state, verbose, nested + 1,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_parser.py", line 697, in _parse
+    subpattern[-1] = (MAX_REPEAT, (min, max, item))
+    ~~~~~~~~~~^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\re\_parser.py", line 168, in __setitem__
+    def __setitem__(self, index, code):
+
+KeyboardInterrupt

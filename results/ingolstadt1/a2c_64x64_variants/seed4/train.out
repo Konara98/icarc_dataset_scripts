@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
+    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
+    ^^^^^^^^^^^^^^^^^^
+  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
+    import sumo as _sumo
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 30, in <module>
+    import importlib.metadata  # noqa
+    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 19, in <module>
+    from . import _adapters, _meta
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\_adapters.py", line 5, in <module>
+    import email.message
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\message.py", line 15, in <module>
+    from email import utils
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\email\utils.py", line 29, in <module>
+    import socket
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 55, in <module>
+    import os, sys, io, selectors
+  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\selectors.py", line 12, in <module>
+    import select
+KeyboardInterrupt
