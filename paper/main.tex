@@ -1,0 +1,89 @@
+% ICARC paper
+% Build in VS Code (LaTeX Workshop): open this file and press Ctrl+Alt+B, or save it.
+% View the PDF: Ctrl+Alt+V.  Command line: latexmk -pdf main.tex
+\documentclass[conference,a4paper]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+% Page layout of the IEEE A4 conference template (IEE conference template/conference-template-a4.docx):
+% A4, top 0.75 in, bottom 1 in, left/right 16 mm, 0.25 in between the two columns.
+\usepackage[a4paper, top=19.05mm, bottom=25.4mm, left=16mm, right=16mm, columnsep=6.35mm]{geometry}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage{tikz}
+\usetikzlibrary{positioning,arrows.meta,fit,backgrounds,calc}
+
+% Figure, table and keyword settings requested by the supervisor (comment 16)
+\usepackage{balance}
+\usepackage{caption}
+\DeclareCaptionFormat{figureformat}{#1#2. #3}
+\captionsetup[figure]{format=figureformat, justification=raggedright, singlelinecheck=false, font=footnotesize, labelsep=none}
+\DeclareCaptionFormat{tableformat}{\textsc{#1}#2. \textsc{#3}}
+\captionsetup[table]{format=tableformat, labelsep=none, font=footnotesize}  % 8 pt, as the template's table head
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\setlength{\parskip}{6pt}
+\renewcommand\IEEEkeywordsname{Keywords}
+
+% Tables: all horizontal and vertical borders, as in the template.
+\renewcommand{\arraystretch}{1.15}
+% Table footnote, 8 pt (template style "table footnote").
+\newcommand{\tablenote}[1]{\par\vspace{2pt}{\scriptsize #1}}
+
+% ---------------------------------------------------------------------------
+% Draft helpers. Set \draftfalse before submission: every TBD/TODO disappears,
+% so the compile log (and a search for "TBD") shows anything still missing.
+\newif\ifdraft
+\drafttrue
+\ifdraft
+  \newcommand{\TBD}[1][]{\textcolor{red}{[TBD#1]}\xspace}
+  \newcommand{\todo}[1]{\textcolor{blue}{[TODO: #1]}}
+\else
+  \newcommand{\TBD}[1][]{}
+  \newcommand{\todo}[1]{}
+\fi
+% ---------------------------------------------------------------------------
+
+\begin{document}
+
+\title{Generalized Deep Reinforcement Learning for Traffic Signal Control}
+
+\author{
+\IEEEauthorblockN{Lakshitha Konara}
+\IEEEauthorblockA{\textit{Department of Computer Science and Engineering} \\
+\textit{University of Moratuwa}\\
+Moratuwa, Sri Lanka \\
+lakshithakonara3@gmail.com}
+\and
+\IEEEauthorblockN{Dulani Meedeniya}
+\IEEEauthorblockA{\textit{Department of Computer Science and Engineering} \\
+\textit{University of Moratuwa}\\
+Moratuwa, Sri Lanka \\
+dulanim@cse.mrt.ac.lk}
+}
+
+\maketitle
+
+\input{sections/00_abstract}
+\input{sections/01_introduction}
+\input{sections/02_related_work}
+\input{sections/03_problem}
+\input{sections/04_method}
+\input{sections/05_setup}
+\input{sections/06_results}
+\input{sections/07_conclusion}
+
+% References: kept in the separate file references.bib
+\balance
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}

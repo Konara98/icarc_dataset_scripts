@@ -3,6 +3,7 @@
   python run_all.py --scenarios cologne1 ingolstadt1 cologne3 --workers 6    # main study: 4 algos x 5 seeds
   python run_all.py --scenarios cologne1 --algos dqn --net 16 16             # smaller network
   python run_all.py --scenarios cologne1 --algos dqn --train-set real        # ablation: real hour only
+  python run_all.py --scenarios cologne3 --algos a2c-ind                     # ablation: no policy sharing
 
 A run that already finished all its episodes is skipped, so re-running after a
 crash, a reboot or a Colab disconnect only does the missing runs (an unfinished
@@ -43,7 +44,7 @@ def run(job, extra):
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--scenarios", nargs="+", default=["cologne1", "ingolstadt1"], choices=C.SCENARIOS)
-    ap.add_argument("--algos", nargs="+", default=list(C.ALGOS), choices=list(C.ALGOS))
+    ap.add_argument("--algos", nargs="+", default=C.MAIN_ALGOS, choices=list(C.ALGOS))
     ap.add_argument("--seeds", type=int, nargs="+", default=[0, 1, 2, 3, 4])
     ap.add_argument("--net", type=int, nargs="+", default=[64, 64])
     ap.add_argument("--train-set", choices=["variants", "real"], default="variants")

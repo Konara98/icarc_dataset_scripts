@@ -1,20 +1,221 @@
-Traceback (most recent call last):
-  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
-    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
-    ^^^^^^^^^^^^^^^^^^
-  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
-    import sumo as _sumo
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 30, in <module>
-    import importlib.metadata  # noqa
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 17, in <module>
-    import inspect
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\inspect.py", line 145, in <module>
-    import ast
-  File "<frozen importlib._bootstrap>", line 1354, in _find_and_load
-  File "<frozen importlib._bootstrap>", line 1325, in _find_and_load_unlocked
-  File "<frozen importlib._bootstrap>", line 929, in _load_unlocked
-  File "<frozen importlib._bootstrap_external>", line 990, in exec_module
-  File "<frozen importlib._bootstrap_external>", line 1086, in get_code
-  File "<frozen importlib._bootstrap_external>", line 1185, in get_data
-KeyboardInterrupt
+[ingolstadt1 dqn_64x64_variants seed4] ep 1/200 ingolstadt1_x0.9_v3.rou.xml: total wait 13.0 s, reward -0.2, 3 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 2/200 ingolstadt1_x1.0_v1.rou.xml: total wait 16.7 s, reward -1.1, 10 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 3/200 ingolstadt1_x0.8_v3.rou.xml: total wait 10.4 s, reward -1.6, 18 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 4/200 ingolstadt1_x1.1_v0.rou.xml: total wait 24.7 s, reward -1.7, 27 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 5/200 ingolstadt1_x1.1_v3.rou.xml: total wait 23.9 s, reward -0.7, 36 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 6/200 ingolstadt1_x0.8_v2.rou.xml: total wait 8.8 s, reward -0.1, 44 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 7/200 ingolstadt1_x0.8_v1.rou.xml: total wait 12.1 s, reward -0.2, 51 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 8/200 ingolstadt1_x1.1_v1.rou.xml: total wait 21.7 s, reward -1.8, 61 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 9/200 ingolstadt1_x0.8_v0.rou.xml: total wait 12.7 s, reward -1.1, 69 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 10/200 ingolstadt1_x0.9_v2.rou.xml: total wait 14.6 s, reward -0.1, 78 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 10: total wait 13.0 s  <- best so far, saved
+[ingolstadt1 dqn_64x64_variants seed4] ep 11/200 ingolstadt1_x1.0_v0.rou.xml: total wait 16.6 s, reward -0.3, 108 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 12/200 ingolstadt1_x0.9_v0.rou.xml: total wait 15.1 s, reward -0.0, 117 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 13/200 ingolstadt1_x1.0_v3.rou.xml: total wait 20.0 s, reward -0.5, 126 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 14/200 ingolstadt1_x1.2_v0.rou.xml: total wait 26.4 s, reward -5.9, 136 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 15/200 ingolstadt1_x1.2_v2.rou.xml: total wait 46.9 s, reward -0.1, 146 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 16/200 ingolstadt1_x0.9_v1.rou.xml: total wait 14.5 s, reward -0.0, 155 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 17/200 ingolstadt1_x1.1_v2.rou.xml: total wait 22.3 s, reward -1.1, 164 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 18/200 ingolstadt1_x1.0_v2.rou.xml: total wait 17.2 s, reward -1.9, 173 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 19/200 ingolstadt1_x1.2_v3.rou.xml: total wait 37.3 s, reward -4.2, 184 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 20/200 ingolstadt1_x1.2_v1.rou.xml: total wait 31.4 s, reward -0.2, 194 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 20: total wait 24.9 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 21/200 ingolstadt1_x0.8_v3.rou.xml: total wait 8.3 s, reward -0.1, 224 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 22/200 ingolstadt1_x1.0_v0.rou.xml: total wait 17.2 s, reward -3.0, 233 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 23/200 ingolstadt1_x0.9_v2.rou.xml: total wait 10.9 s, reward -0.0, 242 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 24/200 ingolstadt1_x0.8_v0.rou.xml: total wait 6.0 s, reward -0.0, 250 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 25/200 ingolstadt1_x1.2_v2.rou.xml: total wait 22.8 s, reward -0.2, 260 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 26/200 ingolstadt1_x1.1_v0.rou.xml: total wait 24.4 s, reward -0.6, 270 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 27/200 ingolstadt1_x0.9_v0.rou.xml: total wait 10.4 s, reward -0.1, 278 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 28/200 ingolstadt1_x1.2_v3.rou.xml: total wait 20.5 s, reward -0.0, 288 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 29/200 ingolstadt1_x0.8_v2.rou.xml: total wait 6.3 s, reward -1.6, 296 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 30/200 ingolstadt1_x1.1_v1.rou.xml: total wait 14.8 s, reward -1.6, 306 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 30: total wait 12.6 s  <- best so far, saved
+[ingolstadt1 dqn_64x64_variants seed4] ep 31/200 ingolstadt1_x1.0_v2.rou.xml: total wait 8.5 s, reward -0.4, 336 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 32/200 ingolstadt1_x0.9_v1.rou.xml: total wait 8.3 s, reward -0.2, 344 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 33/200 ingolstadt1_x0.8_v1.rou.xml: total wait 6.1 s, reward -0.3, 352 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 34/200 ingolstadt1_x1.2_v1.rou.xml: total wait 16.6 s, reward -0.8, 362 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 35/200 ingolstadt1_x1.0_v1.rou.xml: total wait 9.3 s, reward 0.0, 370 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 36/200 ingolstadt1_x1.0_v3.rou.xml: total wait 20.9 s, reward -1.4, 379 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 37/200 ingolstadt1_x1.1_v2.rou.xml: total wait 26.5 s, reward -0.7, 389 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 38/200 ingolstadt1_x1.1_v3.rou.xml: total wait 13.6 s, reward -0.2, 398 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 39/200 ingolstadt1_x1.2_v0.rou.xml: total wait 33.8 s, reward -3.9, 407 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 40/200 ingolstadt1_x0.9_v3.rou.xml: total wait 13.2 s, reward -0.1, 416 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 40: total wait 11.8 s  <- best so far, saved
+[ingolstadt1 dqn_64x64_variants seed4] ep 41/200 ingolstadt1_x0.9_v1.rou.xml: total wait 13.8 s, reward -0.1, 444 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 42/200 ingolstadt1_x0.9_v3.rou.xml: total wait 7.3 s, reward -0.0, 453 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 43/200 ingolstadt1_x1.1_v3.rou.xml: total wait 17.4 s, reward -0.2, 463 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 44/200 ingolstadt1_x1.0_v0.rou.xml: total wait 17.9 s, reward -1.1, 472 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 45/200 ingolstadt1_x0.8_v2.rou.xml: total wait 202.1 s, reward -2.1, 482 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 46/200 ingolstadt1_x1.1_v2.rou.xml: total wait 12.2 s, reward -0.2, 492 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 47/200 ingolstadt1_x1.1_v1.rou.xml: total wait 16.9 s, reward -0.3, 501 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 48/200 ingolstadt1_x1.2_v0.rou.xml: total wait 25.4 s, reward -0.0, 511 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 49/200 ingolstadt1_x0.9_v0.rou.xml: total wait 11.2 s, reward -0.3, 519 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 50/200 ingolstadt1_x0.8_v0.rou.xml: total wait 5.1 s, reward -0.1, 528 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 50: total wait 10.0 s  <- best so far, saved
+[ingolstadt1 dqn_64x64_variants seed4] ep 51/200 ingolstadt1_x1.0_v3.rou.xml: total wait 12.0 s, reward -0.6, 557 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 52/200 ingolstadt1_x1.0_v1.rou.xml: total wait 11.6 s, reward -0.5, 566 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 53/200 ingolstadt1_x0.8_v3.rou.xml: total wait 6.7 s, reward 0.0, 574 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 54/200 ingolstadt1_x1.2_v2.rou.xml: total wait 21.9 s, reward -0.1, 585 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 55/200 ingolstadt1_x0.9_v2.rou.xml: total wait 8.2 s, reward -0.0, 593 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 56/200 ingolstadt1_x1.1_v0.rou.xml: total wait 11.5 s, reward -0.1, 602 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 57/200 ingolstadt1_x1.2_v1.rou.xml: total wait 18.6 s, reward -0.6, 612 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 58/200 ingolstadt1_x0.8_v1.rou.xml: total wait 9.9 s, reward -0.3, 620 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 59/200 ingolstadt1_x1.2_v3.rou.xml: total wait 21.1 s, reward -0.1, 629 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 60/200 ingolstadt1_x1.0_v2.rou.xml: total wait 7.5 s, reward -0.0, 638 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 60: total wait 10.1 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 61/200 ingolstadt1_x0.9_v1.rou.xml: total wait 6.7 s, reward -0.3, 666 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 62/200 ingolstadt1_x0.9_v3.rou.xml: total wait 52.5 s, reward -0.8, 675 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 63/200 ingolstadt1_x1.0_v1.rou.xml: total wait 25.4 s, reward -0.3, 685 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 64/200 ingolstadt1_x1.0_v0.rou.xml: total wait 9.3 s, reward -0.0, 693 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 65/200 ingolstadt1_x0.8_v1.rou.xml: total wait 5.6 s, reward 0.0, 701 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 66/200 ingolstadt1_x1.1_v3.rou.xml: total wait 13.4 s, reward 0.0, 710 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 67/200 ingolstadt1_x0.8_v0.rou.xml: total wait 6.2 s, reward -0.0, 718 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 68/200 ingolstadt1_x1.2_v2.rou.xml: total wait 27.0 s, reward -1.1, 728 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 69/200 ingolstadt1_x1.0_v2.rou.xml: total wait 12.9 s, reward -0.1, 737 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 70/200 ingolstadt1_x0.9_v0.rou.xml: total wait 7.1 s, reward -0.5, 746 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 70: total wait 9.3 s  <- best so far, saved
+[ingolstadt1 dqn_64x64_variants seed4] ep 71/200 ingolstadt1_x1.2_v0.rou.xml: total wait 18.8 s, reward -9.4, 775 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 72/200 ingolstadt1_x1.2_v1.rou.xml: total wait 30.7 s, reward -0.4, 785 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 73/200 ingolstadt1_x1.1_v0.rou.xml: total wait 14.9 s, reward -0.1, 794 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 74/200 ingolstadt1_x1.2_v3.rou.xml: total wait 18.0 s, reward -0.1, 804 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 75/200 ingolstadt1_x0.8_v2.rou.xml: total wait 6.0 s, reward -0.0, 811 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 76/200 ingolstadt1_x1.1_v2.rou.xml: total wait 18.7 s, reward -0.5, 820 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 77/200 ingolstadt1_x1.0_v3.rou.xml: total wait 11.3 s, reward 0.0, 829 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 78/200 ingolstadt1_x1.1_v1.rou.xml: total wait 15.2 s, reward -0.3, 838 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 79/200 ingolstadt1_x0.8_v3.rou.xml: total wait 8.0 s, reward -0.2, 847 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 80/200 ingolstadt1_x0.9_v2.rou.xml: total wait 10.8 s, reward -0.3, 855 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 80: total wait 37.9 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 81/200 ingolstadt1_x0.9_v2.rou.xml: total wait 8.2 s, reward -0.1, 888 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 82/200 ingolstadt1_x1.1_v2.rou.xml: total wait 11.3 s, reward -0.2, 896 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 83/200 ingolstadt1_x1.0_v0.rou.xml: total wait 9.2 s, reward -0.5, 905 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 84/200 ingolstadt1_x0.9_v1.rou.xml: total wait 5.3 s, reward -0.1, 913 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 85/200 ingolstadt1_x1.0_v3.rou.xml: total wait 12.6 s, reward -1.3, 921 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 86/200 ingolstadt1_x1.2_v3.rou.xml: total wait 21.3 s, reward -0.9, 931 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 87/200 ingolstadt1_x1.1_v3.rou.xml: total wait 11.4 s, reward -0.0, 940 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 88/200 ingolstadt1_x1.0_v1.rou.xml: total wait 14.2 s, reward -0.8, 949 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 89/200 ingolstadt1_x1.2_v0.rou.xml: total wait 27.5 s, reward -0.0, 959 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 90/200 ingolstadt1_x1.0_v2.rou.xml: total wait 9.9 s, reward -0.1, 968 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 90: total wait 9.8 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 91/200 ingolstadt1_x1.2_v1.rou.xml: total wait 26.3 s, reward -0.1, 998 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 92/200 ingolstadt1_x0.8_v3.rou.xml: total wait 4.4 s, reward -0.0, 1005 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 93/200 ingolstadt1_x1.1_v1.rou.xml: total wait 11.9 s, reward -0.0, 1015 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 94/200 ingolstadt1_x0.8_v0.rou.xml: total wait 4.4 s, reward -0.0, 1023 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 95/200 ingolstadt1_x1.2_v2.rou.xml: total wait 30.2 s, reward -6.6, 1033 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 96/200 ingolstadt1_x0.8_v1.rou.xml: total wait 3.7 s, reward -0.0, 1041 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 97/200 ingolstadt1_x0.8_v2.rou.xml: total wait 4.1 s, reward -0.0, 1049 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 98/200 ingolstadt1_x1.1_v0.rou.xml: total wait 8.6 s, reward -0.1, 1059 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 99/200 ingolstadt1_x0.9_v3.rou.xml: total wait 4.9 s, reward -0.0, 1067 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 100/200 ingolstadt1_x0.9_v0.rou.xml: total wait 5.7 s, reward -0.3, 1076 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 100: total wait 8.0 s  <- best so far, saved
+[ingolstadt1 dqn_64x64_variants seed4] ep 101/200 ingolstadt1_x0.8_v3.rou.xml: total wait 6.1 s, reward -0.0, 1104 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 102/200 ingolstadt1_x1.0_v2.rou.xml: total wait 7.8 s, reward 0.0, 1113 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 103/200 ingolstadt1_x0.9_v1.rou.xml: total wait 4.6 s, reward -0.1, 1121 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 104/200 ingolstadt1_x1.0_v1.rou.xml: total wait 10.2 s, reward 0.0, 1130 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 105/200 ingolstadt1_x1.1_v2.rou.xml: total wait 14.9 s, reward -0.2, 1139 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 106/200 ingolstadt1_x0.8_v0.rou.xml: total wait 4.6 s, reward -0.1, 1147 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 107/200 ingolstadt1_x1.1_v3.rou.xml: total wait 10.0 s, reward 0.0, 1157 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 108/200 ingolstadt1_x1.2_v1.rou.xml: total wait 15.0 s, reward -0.3, 1169 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 109/200 ingolstadt1_x1.0_v3.rou.xml: total wait 10.0 s, reward -0.4, 1186 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 110/200 ingolstadt1_x0.8_v1.rou.xml: total wait 4.0 s, reward 0.0, 1195 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 110: total wait 8.2 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 111/200 ingolstadt1_x0.9_v0.rou.xml: total wait 4.9 s, reward -0.0, 1233 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 112/200 ingolstadt1_x1.1_v0.rou.xml: total wait 11.5 s, reward -0.1, 1242 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 113/200 ingolstadt1_x1.1_v1.rou.xml: total wait 10.4 s, reward -0.3, 1251 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 114/200 ingolstadt1_x0.8_v2.rou.xml: total wait 3.8 s, reward -0.0, 1259 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 115/200 ingolstadt1_x0.9_v2.rou.xml: total wait 6.9 s, reward 0.0, 1268 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 116/200 ingolstadt1_x1.0_v0.rou.xml: total wait 19.2 s, reward -0.0, 1276 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 117/200 ingolstadt1_x1.2_v2.rou.xml: total wait 19.6 s, reward -0.3, 1286 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 118/200 ingolstadt1_x1.2_v0.rou.xml: total wait 17.8 s, reward -0.0, 1295 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 119/200 ingolstadt1_x1.2_v3.rou.xml: total wait 15.0 s, reward -0.4, 1305 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 120/200 ingolstadt1_x0.9_v3.rou.xml: total wait 6.4 s, reward -0.0, 1313 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 120: total wait 10.7 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 121/200 ingolstadt1_x1.2_v3.rou.xml: total wait 15.7 s, reward -0.0, 1344 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 122/200 ingolstadt1_x0.8_v2.rou.xml: total wait 6.6 s, reward -0.0, 1354 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 123/200 ingolstadt1_x1.0_v1.rou.xml: total wait 6.5 s, reward -0.2, 1362 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 124/200 ingolstadt1_x0.9_v2.rou.xml: total wait 10.4 s, reward -2.7, 1372 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 125/200 ingolstadt1_x1.1_v2.rou.xml: total wait 13.0 s, reward -0.4, 1382 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 126/200 ingolstadt1_x0.9_v0.rou.xml: total wait 5.3 s, reward -0.0, 1391 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 127/200 ingolstadt1_x1.2_v2.rou.xml: total wait 21.5 s, reward -0.0, 1401 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 128/200 ingolstadt1_x1.1_v3.rou.xml: total wait 9.3 s, reward -0.0, 1410 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 129/200 ingolstadt1_x1.2_v0.rou.xml: total wait 23.5 s, reward 0.0, 1419 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 130/200 ingolstadt1_x1.2_v1.rou.xml: total wait 15.1 s, reward -0.0, 1429 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 130: total wait 10.0 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 131/200 ingolstadt1_x1.1_v1.rou.xml: total wait 11.4 s, reward -0.3, 1458 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 132/200 ingolstadt1_x0.9_v1.rou.xml: total wait 4.1 s, reward -0.1, 1467 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 133/200 ingolstadt1_x0.8_v0.rou.xml: total wait 4.5 s, reward -0.2, 1475 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 134/200 ingolstadt1_x1.0_v2.rou.xml: total wait 9.4 s, reward 0.0, 1484 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 135/200 ingolstadt1_x0.9_v3.rou.xml: total wait 4.5 s, reward -0.0, 1492 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 136/200 ingolstadt1_x0.8_v3.rou.xml: total wait 5.7 s, reward 0.0, 1500 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 137/200 ingolstadt1_x0.8_v1.rou.xml: total wait 3.6 s, reward -0.1, 1507 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 138/200 ingolstadt1_x1.1_v0.rou.xml: total wait 8.8 s, reward -0.0, 1516 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 139/200 ingolstadt1_x1.0_v3.rou.xml: total wait 8.0 s, reward -0.1, 1526 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 140/200 ingolstadt1_x1.0_v0.rou.xml: total wait 7.4 s, reward -0.0, 1535 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 140: total wait 9.1 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 141/200 ingolstadt1_x1.0_v1.rou.xml: total wait 8.3 s, reward -0.1, 1565 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 142/200 ingolstadt1_x1.2_v2.rou.xml: total wait 19.5 s, reward 0.0, 1574 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 143/200 ingolstadt1_x0.8_v3.rou.xml: total wait 4.7 s, reward -0.0, 1582 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 144/200 ingolstadt1_x1.1_v2.rou.xml: total wait 10.3 s, reward -0.1, 1591 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 145/200 ingolstadt1_x0.9_v2.rou.xml: total wait 5.0 s, reward -0.0, 1600 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 146/200 ingolstadt1_x1.1_v3.rou.xml: total wait 9.7 s, reward -0.0, 1609 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 147/200 ingolstadt1_x1.2_v1.rou.xml: total wait 17.3 s, reward -0.1, 1619 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 148/200 ingolstadt1_x0.8_v1.rou.xml: total wait 3.4 s, reward 0.0, 1627 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 149/200 ingolstadt1_x0.8_v0.rou.xml: total wait 3.6 s, reward -0.1, 1635 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 150/200 ingolstadt1_x1.0_v3.rou.xml: total wait 7.6 s, reward -0.1, 1643 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 150: total wait 8.5 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 151/200 ingolstadt1_x1.0_v2.rou.xml: total wait 9.0 s, reward -0.1, 1672 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 152/200 ingolstadt1_x0.8_v2.rou.xml: total wait 3.2 s, reward -0.0, 1680 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 153/200 ingolstadt1_x1.0_v0.rou.xml: total wait 6.6 s, reward -0.0, 1689 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 154/200 ingolstadt1_x0.9_v0.rou.xml: total wait 3.6 s, reward 0.0, 1697 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 155/200 ingolstadt1_x1.2_v3.rou.xml: total wait 15.1 s, reward -0.7, 1707 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 156/200 ingolstadt1_x1.2_v0.rou.xml: total wait 16.7 s, reward 0.0, 1716 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 157/200 ingolstadt1_x1.1_v1.rou.xml: total wait 11.0 s, reward -0.3, 1725 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 158/200 ingolstadt1_x0.9_v3.rou.xml: total wait 5.4 s, reward -0.2, 1734 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 159/200 ingolstadt1_x0.9_v1.rou.xml: total wait 5.3 s, reward -0.1, 1742 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 160/200 ingolstadt1_x1.1_v0.rou.xml: total wait 8.9 s, reward -0.1, 1751 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 160: total wait 35.6 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 161/200 ingolstadt1_x1.0_v2.rou.xml: total wait 6.7 s, reward -0.2, 1783 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 162/200 ingolstadt1_x0.8_v1.rou.xml: total wait 4.4 s, reward -0.2, 1791 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 163/200 ingolstadt1_x0.8_v3.rou.xml: total wait 6.3 s, reward -0.0, 1799 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 164/200 ingolstadt1_x1.2_v0.rou.xml: total wait 17.7 s, reward -0.4, 1809 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 165/200 ingolstadt1_x1.0_v1.rou.xml: total wait 6.5 s, reward -0.1, 1818 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 166/200 ingolstadt1_x1.1_v0.rou.xml: total wait 16.5 s, reward -1.6, 1827 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 167/200 ingolstadt1_x0.9_v2.rou.xml: total wait 5.3 s, reward -0.2, 1836 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 168/200 ingolstadt1_x1.2_v3.rou.xml: total wait 16.2 s, reward 0.0, 1845 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 169/200 ingolstadt1_x1.2_v1.rou.xml: total wait 15.7 s, reward -0.0, 1855 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 170/200 ingolstadt1_x0.9_v3.rou.xml: total wait 6.1 s, reward -0.0, 1863 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 170: total wait 7.6 s  <- best so far, saved
+[ingolstadt1 dqn_64x64_variants seed4] ep 171/200 ingolstadt1_x1.0_v3.rou.xml: total wait 9.3 s, reward -0.1, 1892 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 172/200 ingolstadt1_x1.1_v3.rou.xml: total wait 8.1 s, reward -0.2, 1901 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 173/200 ingolstadt1_x1.1_v2.rou.xml: total wait 9.5 s, reward -0.0, 1910 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 174/200 ingolstadt1_x1.0_v0.rou.xml: total wait 6.7 s, reward -0.1, 1919 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 175/200 ingolstadt1_x1.1_v1.rou.xml: total wait 12.2 s, reward -0.3, 1928 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 176/200 ingolstadt1_x0.8_v0.rou.xml: total wait 4.4 s, reward -0.1, 1936 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 177/200 ingolstadt1_x1.2_v2.rou.xml: total wait 19.7 s, reward -0.0, 1946 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 178/200 ingolstadt1_x0.9_v1.rou.xml: total wait 4.4 s, reward -0.2, 1954 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 179/200 ingolstadt1_x0.8_v2.rou.xml: total wait 4.2 s, reward -0.0, 1963 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 180/200 ingolstadt1_x0.9_v0.rou.xml: total wait 5.5 s, reward -0.1, 1971 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 180: total wait 8.5 s
+[ingolstadt1 dqn_64x64_variants seed4] ep 181/200 ingolstadt1_x0.9_v3.rou.xml: total wait 5.1 s, reward -0.0, 1999 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 182/200 ingolstadt1_x1.1_v1.rou.xml: total wait 12.3 s, reward -0.0, 2008 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 183/200 ingolstadt1_x0.9_v2.rou.xml: total wait 4.5 s, reward -0.1, 2017 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 184/200 ingolstadt1_x1.1_v3.rou.xml: total wait 11.5 s, reward -0.0, 2026 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 185/200 ingolstadt1_x1.2_v1.rou.xml: total wait 16.6 s, reward -0.0, 2035 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 186/200 ingolstadt1_x0.8_v0.rou.xml: total wait 3.8 s, reward -0.0, 2043 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 187/200 ingolstadt1_x1.1_v2.rou.xml: total wait 17.3 s, reward 0.0, 2052 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 188/200 ingolstadt1_x0.9_v0.rou.xml: total wait 16.3 s, reward -1.3, 2061 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 189/200 ingolstadt1_x1.1_v0.rou.xml: total wait 13.0 s, reward -0.2, 2070 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 190/200 ingolstadt1_x0.8_v3.rou.xml: total wait 5.0 s, reward -0.1, 2079 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 190: total wait 7.2 s  <- best so far, saved
+[ingolstadt1 dqn_64x64_variants seed4] ep 191/200 ingolstadt1_x1.0_v0.rou.xml: total wait 7.8 s, reward -0.0, 2108 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 192/200 ingolstadt1_x1.0_v2.rou.xml: total wait 7.2 s, reward -0.1, 2117 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 193/200 ingolstadt1_x1.0_v1.rou.xml: total wait 7.7 s, reward -0.1, 2125 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 194/200 ingolstadt1_x1.2_v3.rou.xml: total wait 14.3 s, reward 0.0, 2135 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 195/200 ingolstadt1_x0.8_v2.rou.xml: total wait 3.8 s, reward -0.0, 2142 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 196/200 ingolstadt1_x0.8_v1.rou.xml: total wait 7.0 s, reward -0.1, 2150 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 197/200 ingolstadt1_x0.9_v1.rou.xml: total wait 5.2 s, reward -0.2, 2159 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 198/200 ingolstadt1_x1.2_v2.rou.xml: total wait 16.6 s, reward -0.0, 2168 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 199/200 ingolstadt1_x1.0_v3.rou.xml: total wait 10.5 s, reward 0.0, 2177 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] ep 200/200 ingolstadt1_x1.2_v0.rou.xml: total wait 16.3 s, reward -0.0, 2188 s elapsed
+[ingolstadt1 dqn_64x64_variants seed4] validation after ep 200: total wait 8.1 s
+[ingolstadt1 dqn_64x64_variants seed4] done in 37 min; best validation 7.2 s at episode 190

@@ -1,0 +1,4 @@
+\section{Conclusion}
+\label{sec:conclusion}
+
+This paper compared DQN, Double DQN, PPO and A2C for traffic signal control on three real-city RESCO scenarios, using a generalization-focused framework of demand-randomized training and a shared policy, and testing only on demand unseen in training. A2C was the best and most robust learner, reducing waiting time by 58--59\% on the single-intersection scenarios and keeping more than half of that advantage at unseen heavy demand. On the three-intersection corridor every learner occasionally gridlocked the network at its largest junction, and neither demand randomization, policy sharing nor action masking reliably prevented it. Reliable multi-intersection control, rather than average performance, is therefore the main obstacle to deploying these controllers.

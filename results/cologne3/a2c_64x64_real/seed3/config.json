@@ -1,0 +1,50 @@
+{
+  "scenario": "cologne3",
+  "algo": "a2c",
+  "seed": 3,
+  "episodes": 200,
+  "val_every": 10,
+  "net": [
+    64,
+    64
+  ],
+  "train_set": "real",
+  "lr": null,
+  "hyperparameters": {
+    "learning_rate": 0.0007,
+    "n_steps": 5,
+    "gamma": 0.99,
+    "gae_lambda": 1.0,
+    "ent_coef": 0.01
+  },
+  "traffic_lights": [
+    "360082",
+    "360086",
+    "GS_cluster_2415878664_254486231_359566_359576"
+  ],
+  "inputs": 24,
+  "actions": 4,
+  "yellow_s": 3,
+  "decision_s": 5,
+  "min_green_s": 5,
+  "train_files": [
+    "cologne3_real.rou.xml"
+  ],
+  "val_files": [
+    "cologne3_x0.8_v0.rou.xml",
+    "cologne3_x0.9_v0.rou.xml",
+    "cologne3_x1.0_v0.rou.xml",
+    "cologne3_x1.1_v0.rou.xml",
+    "cologne3_x1.2_v0.rou.xml"
+  ],
+  "versions": {
+    "python": "3.12.0",
+    "torch": "2.14.1+cpu",
+    "stable_baselines3": "2.9.0"
+  },
+  "started": "2026-10-24 17:02:18",
+  "finished": "2026-10-24 17:34:15",
+  "train_seconds": 1917,
+  "best_val_avg_total_wait": 10.702506254812867,
+  "best_episode": 90
+}

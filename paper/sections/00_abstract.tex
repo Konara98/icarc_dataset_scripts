@@ -1,0 +1,8 @@
+\begin{abstract}
+Deep reinforcement learning (DRL) controllers for adaptive traffic signals are usually trained and tested on the same hour of traffic, which hides whether they generalize to traffic they have not seen. This paper evaluates whether DRL signal controllers generalize to demand levels not encountered during training. Using three real-city scenarios of the RESCO benchmark from Cologne and Ingolstadt in the SUMO simulator, we train DQN, Double DQN, PPO and A2C on seeded variants of the real peak hour with 0.8 to 1.2 times its traffic, select models on separate validation variants, and test them on 0.7 and 1.3 times the traffic and on the original hour, against fixed-time and tuned actuated control over five training seeds. A2C performs best in all three scenarios. On the two single-intersection scenarios its average total waiting time per vehicle is 13.5 s and 10.0 s, against 32.5 s and 24.2 s for fixed-time control, and 25.2 s and 23.2 s at the unseen heavy demand, against 52.3 s and 48.8 s. On the three-intersection scenario every learner occasionally gridlocks the network. A2C does so in 1 of 50 test episodes and averages 25.5 s against 30.9 s for fixed-time control. An ablation shows that removing demand randomization or policy sharing, or adding valid-action masking, leaves typical waiting times unchanged, while failure counts vary as much between seeds as between variants.
+\end{abstract}
+
+\vspace{6pt}
+\begin{IEEEkeywords}
+deep reinforcement learning, generalization, policy sharing, SUMO, traffic signal control
+\end{IEEEkeywords}

@@ -1,0 +1,221 @@
+[cologne1 a2c_64x64_real seed3] ep 1/200 cologne1_real.rou.xml: total wait 71.4 s, reward -4.4, 37 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 2/200 cologne1_real.rou.xml: total wait 29.0 s, reward -0.8, 42 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 3/200 cologne1_real.rou.xml: total wait 27.4 s, reward -2.3, 46 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 4/200 cologne1_real.rou.xml: total wait 27.1 s, reward -0.7, 52 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 5/200 cologne1_real.rou.xml: total wait 20.9 s, reward -0.3, 57 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 6/200 cologne1_real.rou.xml: total wait 22.2 s, reward -2.1, 63 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 7/200 cologne1_real.rou.xml: total wait 21.2 s, reward -0.4, 69 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 8/200 cologne1_real.rou.xml: total wait 20.8 s, reward -0.9, 75 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 9/200 cologne1_real.rou.xml: total wait 20.0 s, reward -1.5, 81 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 10/200 cologne1_real.rou.xml: total wait 19.1 s, reward -0.4, 88 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 10: total wait 13.7 s  <- best so far, saved
+[cologne1 a2c_64x64_real seed3] ep 11/200 cologne1_real.rou.xml: total wait 16.1 s, reward -0.5, 126 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 12/200 cologne1_real.rou.xml: total wait 16.0 s, reward -1.2, 131 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 13/200 cologne1_real.rou.xml: total wait 16.6 s, reward -0.7, 136 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 14/200 cologne1_real.rou.xml: total wait 15.1 s, reward -0.7, 141 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 15/200 cologne1_real.rou.xml: total wait 15.7 s, reward -0.4, 146 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 16/200 cologne1_real.rou.xml: total wait 18.9 s, reward -0.6, 151 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 17/200 cologne1_real.rou.xml: total wait 15.3 s, reward -0.7, 156 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 18/200 cologne1_real.rou.xml: total wait 15.7 s, reward -0.2, 161 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 19/200 cologne1_real.rou.xml: total wait 16.0 s, reward -0.4, 166 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 20/200 cologne1_real.rou.xml: total wait 59.7 s, reward -405.4, 172 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 20: total wait 21.1 s
+[cologne1 a2c_64x64_real seed3] ep 21/200 cologne1_real.rou.xml: total wait 18.3 s, reward -0.7, 195 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 22/200 cologne1_real.rou.xml: total wait 19.5 s, reward -1.0, 201 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 23/200 cologne1_real.rou.xml: total wait 15.9 s, reward -0.4, 207 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 24/200 cologne1_real.rou.xml: total wait 18.5 s, reward -0.3, 213 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 25/200 cologne1_real.rou.xml: total wait 16.3 s, reward -0.7, 218 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 26/200 cologne1_real.rou.xml: total wait 18.2 s, reward -0.6, 224 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 27/200 cologne1_real.rou.xml: total wait 18.2 s, reward -0.4, 230 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 28/200 cologne1_real.rou.xml: total wait 15.6 s, reward -0.3, 235 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 29/200 cologne1_real.rou.xml: total wait 17.2 s, reward -0.4, 240 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 30/200 cologne1_real.rou.xml: total wait 16.7 s, reward -0.7, 245 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 30: total wait 18.2 s
+[cologne1 a2c_64x64_real seed3] ep 31/200 cologne1_real.rou.xml: total wait 17.0 s, reward -1.5, 268 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 32/200 cologne1_real.rou.xml: total wait 16.1 s, reward -0.4, 273 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 33/200 cologne1_real.rou.xml: total wait 16.9 s, reward -0.6, 278 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 34/200 cologne1_real.rou.xml: total wait 14.3 s, reward -0.6, 282 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 35/200 cologne1_real.rou.xml: total wait 17.3 s, reward -1.2, 288 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 36/200 cologne1_real.rou.xml: total wait 15.7 s, reward -0.6, 292 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 37/200 cologne1_real.rou.xml: total wait 14.3 s, reward -0.1, 298 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 38/200 cologne1_real.rou.xml: total wait 14.4 s, reward -0.4, 302 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 39/200 cologne1_real.rou.xml: total wait 16.0 s, reward -0.7, 307 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 40/200 cologne1_real.rou.xml: total wait 16.2 s, reward -0.4, 312 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 40: total wait 16.6 s
+[cologne1 a2c_64x64_real seed3] ep 41/200 cologne1_real.rou.xml: total wait 16.3 s, reward -0.4, 335 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 42/200 cologne1_real.rou.xml: total wait 15.5 s, reward -0.4, 340 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 43/200 cologne1_real.rou.xml: total wait 16.2 s, reward -0.3, 345 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 44/200 cologne1_real.rou.xml: total wait 14.6 s, reward -0.4, 350 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 45/200 cologne1_real.rou.xml: total wait 11.5 s, reward -0.5, 354 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 46/200 cologne1_real.rou.xml: total wait 13.0 s, reward -0.4, 359 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 47/200 cologne1_real.rou.xml: total wait 14.0 s, reward -0.6, 364 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 48/200 cologne1_real.rou.xml: total wait 13.5 s, reward -0.5, 369 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 49/200 cologne1_real.rou.xml: total wait 13.4 s, reward -0.4, 373 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 50/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.3, 379 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 50: total wait 284.0 s
+[cologne1 a2c_64x64_real seed3] ep 51/200 cologne1_real.rou.xml: total wait 15.4 s, reward -0.5, 409 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 52/200 cologne1_real.rou.xml: total wait 14.7 s, reward -0.5, 414 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 53/200 cologne1_real.rou.xml: total wait 12.0 s, reward -1.3, 419 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 54/200 cologne1_real.rou.xml: total wait 12.1 s, reward -0.4, 424 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 55/200 cologne1_real.rou.xml: total wait 12.5 s, reward -0.3, 429 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 56/200 cologne1_real.rou.xml: total wait 14.8 s, reward -0.5, 434 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 57/200 cologne1_real.rou.xml: total wait 12.5 s, reward -0.7, 439 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 58/200 cologne1_real.rou.xml: total wait 11.3 s, reward -0.6, 443 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 59/200 cologne1_real.rou.xml: total wait 13.4 s, reward -0.5, 448 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 60/200 cologne1_real.rou.xml: total wait 12.2 s, reward -0.4, 453 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 60: total wait 13.2 s  <- best so far, saved
+[cologne1 a2c_64x64_real seed3] ep 61/200 cologne1_real.rou.xml: total wait 13.4 s, reward -0.6, 480 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 62/200 cologne1_real.rou.xml: total wait 12.6 s, reward -0.3, 485 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 63/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.3, 492 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 64/200 cologne1_real.rou.xml: total wait 14.2 s, reward -0.7, 496 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 65/200 cologne1_real.rou.xml: total wait 14.2 s, reward -0.3, 502 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 66/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.6, 508 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 67/200 cologne1_real.rou.xml: total wait 12.4 s, reward -0.5, 514 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 68/200 cologne1_real.rou.xml: total wait 13.6 s, reward -0.5, 519 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 69/200 cologne1_real.rou.xml: total wait 13.7 s, reward -0.2, 524 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 70/200 cologne1_real.rou.xml: total wait 12.5 s, reward -0.7, 529 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 70: total wait 12.6 s  <- best so far, saved
+[cologne1 a2c_64x64_real seed3] ep 71/200 cologne1_real.rou.xml: total wait 13.6 s, reward -0.4, 558 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 72/200 cologne1_real.rou.xml: total wait 14.9 s, reward -0.5, 565 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 73/200 cologne1_real.rou.xml: total wait 11.1 s, reward -0.8, 572 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 74/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.4, 577 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 75/200 cologne1_real.rou.xml: total wait 14.1 s, reward -0.6, 584 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 76/200 cologne1_real.rou.xml: total wait 14.0 s, reward -0.3, 592 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 77/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.3, 602 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 78/200 cologne1_real.rou.xml: total wait 15.5 s, reward -0.5, 611 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 79/200 cologne1_real.rou.xml: total wait 13.6 s, reward -0.8, 616 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 80/200 cologne1_real.rou.xml: total wait 11.6 s, reward -0.7, 622 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 80: total wait 12.0 s  <- best so far, saved
+[cologne1 a2c_64x64_real seed3] ep 81/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.4, 647 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 82/200 cologne1_real.rou.xml: total wait 12.2 s, reward -0.5, 653 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 83/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.4, 659 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 84/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.5, 664 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 85/200 cologne1_real.rou.xml: total wait 14.3 s, reward -0.7, 670 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 86/200 cologne1_real.rou.xml: total wait 14.8 s, reward -0.6, 675 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 87/200 cologne1_real.rou.xml: total wait 12.5 s, reward -0.7, 680 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 88/200 cologne1_real.rou.xml: total wait 12.6 s, reward -0.1, 685 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 89/200 cologne1_real.rou.xml: total wait 720.3 s, reward -1818.9, 699 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 90/200 cologne1_real.rou.xml: total wait 13.2 s, reward -0.4, 704 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 90: total wait 93.6 s
+[cologne1 a2c_64x64_real seed3] ep 91/200 cologne1_real.rou.xml: total wait 13.5 s, reward -0.5, 757 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 92/200 cologne1_real.rou.xml: total wait 11.7 s, reward -0.3, 762 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 93/200 cologne1_real.rou.xml: total wait 13.1 s, reward -0.4, 767 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 94/200 cologne1_real.rou.xml: total wait 11.5 s, reward -0.6, 772 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 95/200 cologne1_real.rou.xml: total wait 12.3 s, reward -0.4, 777 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 96/200 cologne1_real.rou.xml: total wait 13.4 s, reward -0.5, 782 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 97/200 cologne1_real.rou.xml: total wait 15.1 s, reward -0.6, 788 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 98/200 cologne1_real.rou.xml: total wait 15.7 s, reward -0.6, 793 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 99/200 cologne1_real.rou.xml: total wait 13.3 s, reward -0.4, 798 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 100/200 cologne1_real.rou.xml: total wait 13.2 s, reward -0.6, 804 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 100: total wait 13.2 s
+[cologne1 a2c_64x64_real seed3] ep 101/200 cologne1_real.rou.xml: total wait 13.0 s, reward -0.5, 828 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 102/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.6, 833 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 103/200 cologne1_real.rou.xml: total wait 13.5 s, reward -0.7, 838 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 104/200 cologne1_real.rou.xml: total wait 12.2 s, reward -0.9, 843 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 105/200 cologne1_real.rou.xml: total wait 12.4 s, reward -0.5, 848 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 106/200 cologne1_real.rou.xml: total wait 13.6 s, reward -1.7, 852 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 107/200 cologne1_real.rou.xml: total wait 13.9 s, reward -0.5, 856 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 108/200 cologne1_real.rou.xml: total wait 13.6 s, reward -0.5, 860 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 109/200 cologne1_real.rou.xml: total wait 13.4 s, reward -0.6, 865 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 110/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.4, 869 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 110: total wait 12.6 s
+[cologne1 a2c_64x64_real seed3] ep 111/200 cologne1_real.rou.xml: total wait 13.7 s, reward -0.4, 894 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 112/200 cologne1_real.rou.xml: total wait 13.8 s, reward -0.4, 899 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 113/200 cologne1_real.rou.xml: total wait 14.4 s, reward -0.7, 904 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 114/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.4, 910 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 115/200 cologne1_real.rou.xml: total wait 13.6 s, reward -0.5, 915 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 116/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.7, 920 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 117/200 cologne1_real.rou.xml: total wait 12.4 s, reward -0.9, 925 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 118/200 cologne1_real.rou.xml: total wait 13.8 s, reward -0.4, 931 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 119/200 cologne1_real.rou.xml: total wait 13.9 s, reward -0.7, 936 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 120/200 cologne1_real.rou.xml: total wait 11.4 s, reward -0.6, 941 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 120: total wait 15.3 s
+[cologne1 a2c_64x64_real seed3] ep 121/200 cologne1_real.rou.xml: total wait 11.8 s, reward -0.4, 965 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 122/200 cologne1_real.rou.xml: total wait 12.6 s, reward -0.3, 970 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 123/200 cologne1_real.rou.xml: total wait 13.6 s, reward -0.6, 975 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 124/200 cologne1_real.rou.xml: total wait 15.0 s, reward -0.7, 980 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 125/200 cologne1_real.rou.xml: total wait 13.3 s, reward -0.8, 986 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 126/200 cologne1_real.rou.xml: total wait 13.3 s, reward -0.8, 991 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 127/200 cologne1_real.rou.xml: total wait 12.3 s, reward -1.0, 996 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 128/200 cologne1_real.rou.xml: total wait 12.0 s, reward -1.3, 1001 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 129/200 cologne1_real.rou.xml: total wait 14.1 s, reward -0.6, 1006 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 130/200 cologne1_real.rou.xml: total wait 12.1 s, reward -0.3, 1010 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 130: total wait 12.4 s
+[cologne1 a2c_64x64_real seed3] ep 131/200 cologne1_real.rou.xml: total wait 13.7 s, reward -1.0, 1034 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 132/200 cologne1_real.rou.xml: total wait 15.3 s, reward -0.8, 1038 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 133/200 cologne1_real.rou.xml: total wait 14.9 s, reward -0.4, 1043 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 134/200 cologne1_real.rou.xml: total wait 14.3 s, reward -0.5, 1048 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 135/200 cologne1_real.rou.xml: total wait 14.9 s, reward -0.6, 1054 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 136/200 cologne1_real.rou.xml: total wait 15.4 s, reward -0.4, 1059 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 137/200 cologne1_real.rou.xml: total wait 13.0 s, reward -0.6, 1064 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 138/200 cologne1_real.rou.xml: total wait 13.7 s, reward -0.8, 1069 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 139/200 cologne1_real.rou.xml: total wait 14.5 s, reward -0.5, 1075 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 140/200 cologne1_real.rou.xml: total wait 13.2 s, reward -0.4, 1080 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 140: total wait 12.2 s
+[cologne1 a2c_64x64_real seed3] ep 141/200 cologne1_real.rou.xml: total wait 14.5 s, reward -0.7, 1103 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 142/200 cologne1_real.rou.xml: total wait 13.7 s, reward -0.5, 1109 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 143/200 cologne1_real.rou.xml: total wait 13.0 s, reward -1.6, 1114 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 144/200 cologne1_real.rou.xml: total wait 13.1 s, reward -0.9, 1119 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 145/200 cologne1_real.rou.xml: total wait 13.9 s, reward -0.3, 1124 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 146/200 cologne1_real.rou.xml: total wait 15.1 s, reward -0.7, 1129 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 147/200 cologne1_real.rou.xml: total wait 13.3 s, reward -0.6, 1135 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 148/200 cologne1_real.rou.xml: total wait 14.8 s, reward -0.6, 1140 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 149/200 cologne1_real.rou.xml: total wait 13.9 s, reward -0.6, 1145 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 150/200 cologne1_real.rou.xml: total wait 13.3 s, reward -0.7, 1150 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 150: total wait 11.6 s  <- best so far, saved
+[cologne1 a2c_64x64_real seed3] ep 151/200 cologne1_real.rou.xml: total wait 13.7 s, reward -0.4, 1175 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 152/200 cologne1_real.rou.xml: total wait 13.6 s, reward -0.4, 1180 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 153/200 cologne1_real.rou.xml: total wait 13.9 s, reward -0.4, 1185 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 154/200 cologne1_real.rou.xml: total wait 12.5 s, reward -0.5, 1190 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 155/200 cologne1_real.rou.xml: total wait 14.0 s, reward -0.7, 1195 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 156/200 cologne1_real.rou.xml: total wait 15.5 s, reward -0.4, 1200 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 157/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.5, 1206 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 158/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.7, 1211 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 159/200 cologne1_real.rou.xml: total wait 12.4 s, reward -0.6, 1216 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 160/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.5, 1221 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 160: total wait 11.5 s  <- best so far, saved
+[cologne1 a2c_64x64_real seed3] ep 161/200 cologne1_real.rou.xml: total wait 12.6 s, reward -0.5, 1244 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 162/200 cologne1_real.rou.xml: total wait 11.2 s, reward -0.5, 1250 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 163/200 cologne1_real.rou.xml: total wait 14.9 s, reward -0.4, 1255 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 164/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.4, 1260 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 165/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.4, 1265 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 166/200 cologne1_real.rou.xml: total wait 13.9 s, reward -0.6, 1270 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 167/200 cologne1_real.rou.xml: total wait 15.5 s, reward -0.3, 1275 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 168/200 cologne1_real.rou.xml: total wait 12.8 s, reward -0.5, 1281 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 169/200 cologne1_real.rou.xml: total wait 13.1 s, reward -0.4, 1286 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 170/200 cologne1_real.rou.xml: total wait 11.8 s, reward -0.8, 1291 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 170: total wait 12.4 s
+[cologne1 a2c_64x64_real seed3] ep 171/200 cologne1_real.rou.xml: total wait 13.0 s, reward -0.7, 1314 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 172/200 cologne1_real.rou.xml: total wait 14.3 s, reward -0.4, 1319 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 173/200 cologne1_real.rou.xml: total wait 12.8 s, reward -0.5, 1324 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 174/200 cologne1_real.rou.xml: total wait 13.9 s, reward -0.4, 1330 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 175/200 cologne1_real.rou.xml: total wait 61.8 s, reward -434.5, 1336 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 176/200 cologne1_real.rou.xml: total wait 12.8 s, reward -0.4, 1341 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 177/200 cologne1_real.rou.xml: total wait 13.3 s, reward -0.6, 1346 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 178/200 cologne1_real.rou.xml: total wait 13.2 s, reward -0.5, 1351 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 179/200 cologne1_real.rou.xml: total wait 13.6 s, reward -0.6, 1356 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 180/200 cologne1_real.rou.xml: total wait 12.4 s, reward -0.4, 1361 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 180: total wait 11.1 s  <- best so far, saved
+[cologne1 a2c_64x64_real seed3] ep 181/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.4, 1385 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 182/200 cologne1_real.rou.xml: total wait 12.3 s, reward -0.5, 1390 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 183/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.2, 1395 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 184/200 cologne1_real.rou.xml: total wait 13.5 s, reward -0.5, 1400 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 185/200 cologne1_real.rou.xml: total wait 12.4 s, reward -0.5, 1405 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 186/200 cologne1_real.rou.xml: total wait 12.7 s, reward -0.7, 1410 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 187/200 cologne1_real.rou.xml: total wait 13.5 s, reward -0.7, 1416 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 188/200 cologne1_real.rou.xml: total wait 13.2 s, reward -0.4, 1421 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 189/200 cologne1_real.rou.xml: total wait 14.2 s, reward -0.3, 1426 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 190/200 cologne1_real.rou.xml: total wait 12.9 s, reward -0.4, 1431 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 190: total wait 11.3 s
+[cologne1 a2c_64x64_real seed3] ep 191/200 cologne1_real.rou.xml: total wait 11.1 s, reward -0.6, 1455 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 192/200 cologne1_real.rou.xml: total wait 13.1 s, reward -0.7, 1460 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 193/200 cologne1_real.rou.xml: total wait 14.8 s, reward -0.6, 1465 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 194/200 cologne1_real.rou.xml: total wait 13.3 s, reward -0.8, 1471 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 195/200 cologne1_real.rou.xml: total wait 12.8 s, reward -0.5, 1476 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 196/200 cologne1_real.rou.xml: total wait 12.5 s, reward -0.7, 1481 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 197/200 cologne1_real.rou.xml: total wait 13.9 s, reward -0.5, 1486 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 198/200 cologne1_real.rou.xml: total wait 12.6 s, reward -0.5, 1491 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 199/200 cologne1_real.rou.xml: total wait 13.0 s, reward -0.1, 1497 s elapsed
+[cologne1 a2c_64x64_real seed3] ep 200/200 cologne1_real.rou.xml: total wait 13.8 s, reward -0.7, 1502 s elapsed
+[cologne1 a2c_64x64_real seed3] validation after ep 200: total wait 14.5 s
+[cologne1 a2c_64x64_real seed3] done in 25 min; best validation 11.1 s at episode 180

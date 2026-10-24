@@ -1,0 +1,70 @@
+\section{Methodology}
+\label{sec:method}
+
+\begin{figure*}[t]
+  \centering
+  \resizebox{\textwidth}{!}{\input{figures/pipeline}}
+  \caption{End-to-end pipeline of the proposed framework.}
+  \label{fig:pipeline}
+\end{figure*}
+
+Fig.~\ref{fig:pipeline} summarizes the pipeline. Real peak-hour scenarios are expanded into seeded demand variants, with the training, validation and test sets kept separate; agents are trained in SUMO, selected on validation demand and evaluated only on unseen test demand. The labels C1 and C2 mark the framework components of Section~\ref{sec:framework}.
+
+\subsection{Scenarios and Data}
+We use the cologne1, ingolstadt1 and cologne3 scenarios of the RESCO benchmark~\cite{ault2021resco}, distributed with the sumo-rl package (Table~\ref{tab:scenarios}). RESCO derived the Cologne scenarios (morning peak, 07:00--08:00) from the TAPASCologne model and the Ingolstadt scenario (afternoon peak, 16:00--17:00) from the InTAS model. Each scenario provides a road network, with junctions, lanes and static signal programs, and one hour of trips, with the departure time, origin and destination of every vehicle. Only signalized junctions are agents.
+
+\begin{table}[t]
+\caption{Scenarios and Data Splits}
+\label{tab:scenarios}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|c|c|c|}
+\hline
+\textbf{Property} & \textbf{cologne1} & \textbf{ingolstadt1} & \textbf{cologne3} \\
+\hline
+Junctions / signals (agents) & 9 / 1 & 8 / 1 & 29 / 3 \\
+\hline
+Roads / lanes / length (km)  & 10 / 19 / 1.4 & 11 / 33 / 0.8 & 48 / 76 / 5.7 \\
+\hline
+Green phases per signal & 4 & 3 & 3, 4, 4 \\
+\hline
+Inputs per agent        & 21 & 18 & 14, 17, 21 \\
+\hline
+Real-hour vehicles      & 2{,}015 & 1{,}716 & 2{,}856 \\
+\hline
+Vehicles per file       & 1{,}390--2{,}649 & 1{,}192--2{,}268 & 1{,}970--3{,}754 \\
+\hline
+Train records (20 files) & 40{,}290 & 34{,}293 & 57{,}233 \\
+\hline
+Val.\ records (5 files)  & 10{,}045 & 8{,}567 & 14{,}258 \\
+\hline
+Test records (10 files)  & 20{,}156 & 17{,}182 & 28{,}569 \\
+\hline
+\end{tabular}
+\tablenote{One record is one vehicle trip.}
+\end{table}
+
+\subsection{Pre-processing: Demand Variants and Splits}
+\label{sec:splits}
+Training and testing on the single real hour would reward memorization, so we generate seeded variants of it while keeping the road network unchanged. For a demand scale $\alpha$, each trip is copied $n = \lfloor \alpha \rfloor + B$ times, with $B \sim \mathrm{Bernoulli}(\alpha - \lfloor \alpha \rfloor)$; trips are thus randomly dropped for $\alpha<1$ and duplicated for $\alpha>1$. A duplicate keeps the trip's origin, destination and route but receives a new vehicle identifier, and every copy draws its own departure shift from $U(-60, 60)$\,s, clipped to the simulated hour, so duplicates do not depart together. Trips are then sorted by departure time, as SUMO requires. Each file has its own random seed, so the variants differ but are reproducible. Training uses $\alpha \in \{0.8, 0.9, 1.0, 1.1, 1.2\}$ with 4 variants each, validation the same levels with 1 variant each, and test the unseen levels $0.7$ and $1.3$ plus $1.0$ with 3 variants each, and the unmodified real hour.
+
+This protocol tests demand-level generalization: the amount of traffic and the exact departure times change, while the routes, the time-of-day profile and the road network stay those of the training data. It does not test route-pattern generalization (new origin--destination flows~\cite{kwesiga2026robustness}), temporal generalization (other hours of the day, with a different demand profile), or network-level generalization (new intersections or cities~\cite{wang2024unitsa,gu2024pilight}).
+
+\subsection{RL Learners}
+All learners use the state, action and reward of Section~\ref{sec:problem} and multilayer perceptrons with two hidden layers of 64 ReLU units. DQN~\cite{mnih2015dqn} learns action values $Q_\theta$ with experience replay and a periodically copied target network $Q_{\bar\theta}$. Double DQN~\cite{vanhasselt2016ddqn} reduces DQN's over-estimation by letting the online network choose and the target network evaluate the next action, with target
+\begin{equation}
+  y_t = r_t + \gamma\, Q_{\bar\theta}\big(s_{t+1}, \arg\max_{a} Q_{\theta}(s_{t+1}, a)\big).
+\end{equation}
+PPO~\cite{schulman2017ppo} is an on-policy actor-critic method with a clipped surrogate objective, and A2C~\cite{mnih2016a3c} is the synchronous advantage actor-critic. All implementations are from Stable-Baselines3~\cite{raffin2021sb3}.
+
+\subsection{Generalization-Focused Training Framework}
+\label{sec:framework}
+The framework adds two components to a standard learner, and each can be removed for the ablation study. C1 is demand-randomized training with validation-based selection: every episode loads the next training variant, each file once per shuffled pass, and every 10 episodes the greedy policy is run on the five validation files; the checkpoint with the lowest validation $\bar{w}$ is kept, and test files are never used for training or selection.
+
+C2 is a single policy shared by all signals of a scenario. Sharing pools the experience of all intersections, so each one learns from three times as many decisions on cologne3, and a single model has to be stored and maintained. Because the intersections differ, inputs are zero-padded to the largest intersection and a one-hot intersection identifier is appended; the network can thus learn intersection-specific behaviour. Each signal's phases keep the order of its own signal program, so action $k$ means a different set of movements at different intersections, and the identifier tells the network which meaning applies. The output layer has as many actions as the largest phase set (four on cologne3). An action that a signal does not have is mapped to phase $a \bmod P_i$; on cologne3 this affects only the three-phase signal, where actions 0 and 3 both select phase 0. Invalid actions are not masked in the main experiments. To test whether this aliasing matters, we also train a variant with valid-action masking, in which the logits of phases a signal does not have are set to $-10^9$, so they receive zero probability. For the ablation of C2, each signal instead has its own actor and critic networks of the same size, selected by the identifier, so that no weights are shared.
+
+The identifier makes the shared policy specific to the training network: it encodes a fixed set of intersections, and the padded input layout depends on their lanes. The policy can control the same intersections under new demand, which is what we test, but not a new intersection or a new city without retraining. Transfer to unseen intersections would require an identifier-free, movement-based state and action representation, as in UniTSA~\cite{wang2024unitsa}.
+
+\subsection{Baselines}
+Fixed-time control runs the static signal programs shipped with each scenario. Actuated control uses SUMO's gap-based actuation on the same phases: a green is extended while detectors see vehicles arriving within a maximum gap $g$, between a minimum green of 5\,s and a maximum of $\kappa$ times the planned green, with $(g,\kappa)$ tuned on the validation files over $g \in \{2,3,4\}$\,s and $\kappa \in \{1.5, 2, 3\}$. A random phase every 5\,s serves as a sanity check.

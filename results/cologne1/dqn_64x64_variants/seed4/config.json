@@ -64,5 +64,9 @@
     "torch": "2.14.1+cpu",
     "stable_baselines3": "2.9.0"
   },
-  "started": "2026-10-17 09:16:14"
+  "started": "2026-10-17 11:32:49",
+  "finished": "2026-10-17 12:15:55",
+  "train_seconds": 2586,
+  "best_val_avg_total_wait": 14.012186413224303,
+  "best_episode": 200
 }

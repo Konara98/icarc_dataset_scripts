@@ -1,0 +1,54 @@
+% Fig. 1 - end-to-end pipeline: input -> processing -> output
+\begin{tikzpicture}[
+  font=\scriptsize,
+  stage/.style={draw, rounded corners=2pt, align=left, text width=3.0cm, inner sep=3pt,
+                minimum height=3.3cm, anchor=north, fill=white},
+  head/.style={font=\scriptsize\bfseries, align=center},
+  comp/.style={draw, rounded corners=1pt, fill=blue!8, inner sep=1.2pt, font=\tiny\bfseries},
+  arr/.style={-{Stealth[length=4pt]}, thick},
+  node distance=0.4cm
+]
+\node[stage] (in) {%
+  \textbf{RESCO scenarios}\\[1pt]
+  cologne1, ingolstadt1, cologne3\\[2pt]
+  \texttt{.net.xml}: roads, lanes, signal plans\\[2pt]
+  \texttt{.rou.xml}: real peak-hour trips (2{,}015 / 1{,}716 / 2{,}856 vehicles)};
+\node[stage, right=of in] (pre) {%
+  \textbf{Demand variants}\\[1pt]
+  scale $\alpha$: drop / duplicate trips\\[2pt]
+  departure jitter $\pm 60$\,s\\[2pt]
+  one seed per file\\[2pt]
+  train 20 ($0.8$--$1.2\times$)\\
+  val 5 ($0.8$--$1.2\times$)\\
+  test 10 ($0.7$, $1.0$, $1.3\times$, real)};
+\node[stage, right=of pre] (train) {%
+  \textbf{RL training}\\[1pt]
+  SUMO + TraCI, a decision every 5\,s\\[2pt]
+  state: phase, min-green, lane density and queue\\[2pt]
+  action: next green phase\\[2pt]
+  reward: drop in waiting time\\[2pt]
+  DQN, DDQN, PPO, A2C; 200 episodes $\times$ 5 seeds\\[2pt]
+  best model on validation};
+\node[stage, right=of train] (eval) {%
+  \textbf{Evaluation}\\[1pt]
+  unseen test demand only\\[2pt]
+  same SUMO seed for every controller\\[2pt]
+  vs.\ fixed-time, tuned actuated, random};
+\node[stage, right=of eval] (out) {%
+  \textbf{Outputs}\\[1pt]
+  waiting time, travel time, stops, completed trips\\[2pt]
+  per demand level, mean $\pm$ s.d.\ over seeds\\[2pt]
+  ablation of C1, C2};
+
+\foreach \a/\b in {in/pre, pre/train, train/eval, eval/out}
+  \draw[arr] (\a.east) -- (\b.west);
+
+\node[head, above=2pt of in.north] {Input};
+\node[head, above=2pt of out.north] {Output};
+\node[head] at ($(pre.north)!0.5!(eval.north) + (0,0.22)$) {Processing};
+\draw[thin, gray] ($(pre.north west)+(0,0.08)$) -- ($(eval.north east)+(0,0.08)$);
+
+% framework components, just below the stages they belong to
+\node[comp, anchor=north east] at ($(pre.south east)+(0,-2pt)$) {C1};
+\node[comp, anchor=north east] at ($(train.south east)+(0,-2pt)$) {C1 C2};
+\end{tikzpicture}

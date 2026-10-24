@@ -1,0 +1,186 @@
+% Response to the supervisor's comments on the ICARC draft.
+% Build: latexmk -pdf response_to_comments.tex
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=22mm]{geometry}
+\usepackage{enumitem}
+\usepackage{url}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\newcommand{\cm}[2]{\item[\textbf{#1.}] \textit{#2}\par}
+\newcommand{\re}{\par\textbf{Response:} }
+
+\begin{document}
+\sloppy
+
+\begin{center}
+{\Large\textbf{Response to Comments}}\\[4pt]
+Paper: ``Generalized Deep Reinforcement Learning for Traffic Signal Control''\\
+Lakshitha Konara --- revised manuscript attached
+\end{center}
+
+Dear Madam, thank you for the detailed comments. Each comment is listed below with the change made and where it appears in the revised manuscript (section, table, figure or equation numbers refer to the revised version). The paper remains within 6 pages.
+
+\textbf{Summary of the main changes}
+\begin{itemize}[nosep]
+  \item Formatting aligned with the IEEE A4 Word template, using your caption, keyword and spacing commands.
+  \item New title; abstract reports actual waiting times instead of percentages.
+  \item Precise definitions of the reward, the performance metric, action timing and safety (Section III, Eqs.~(2)--(4)); equation and notation errors corrected (comment 26).
+  \item Shared-policy action mapping explained, with a new valid-action-masking experiment and a per-intersection evaluation.
+  \item Complete hyperparameters and training cost per algorithm (Table III); complete learning curves on a log scale (Fig.~2).
+  \item References reduced to 15, ten of them from 2021 or later.
+\end{itemize}
+
+\textbf{One finding changed a claim.} The new masking experiment (comment 31) is the full framework with only the surplus action of one signal handled differently, yet it failed as often as the ablated variants (4 of 5 seeds on cologne3). The lower failure count of the full framework is therefore likely due in part to its particular five seeds, so the ablation is now reported as \emph{indicative}: demand randomization and policy sharing do not change typical waiting times, and their effect on gridlock failures is not established with five seeds. The abstract, contributions, Section VI-D and the conclusion were revised accordingly.
+
+\begin{enumerate}[leftmargin=*, label={}, itemsep=6pt]
+
+\cm{1}{IEEE conference formatting issues; check with the Word template.}
+\re Page size, margins and column gap now match the A4 template (A4, top 19.05\,mm, bottom 25.4\,mm, left/right 16\,mm, 6.35\,mm column gap); captions, keywords and tables follow the template styles.
+
+\cm{2}{Limit figure captions to 1 line and move the rest to the figure description.}
+\re Both captions are one line. Their explanations were moved to the text: Fig.~1 in Section IV, Fig.~2 in Section VI-C.
+
+\cm{3}{Don't use bold or italic font in the body text.}
+\re All bold and italic were removed from the body text (contribution list, run-in headings, emphasis, ``et al.''). Bold remains only in table column headings, as in the template's table-head style.
+
+\cm{4}{Don't include a limitations subsection.}
+\re Removed.
+
+\cm{5}{Include a paragraph at the end of that section stating current challenges and future directions.}
+\re Added as the last paragraph of Section VI.
+
+\cm{6}{Reduce the conclusion to one small paragraph.}
+\re Section VII is now a single paragraph of four sentences.
+
+\cm{7}{Reduce references to 15.}
+\re Exactly 15 references.
+
+\cm{8}{Try to remove all references before 2021.}
+\re Ten of the 15 references are from 2021--2026, including three new ones (a 2025 review, LibSignal 2024, UniTSA 2024). The five older references are the original sources of the simulator and the four algorithms compared (SUMO 2018, DQN 2015, Double DQN 2016, A2C 2016, PPO 2017), which a comparison of these algorithms has to cite.
+
+\cm{9}{Keep a separate .bib file, called at the end of the .tex.}
+\re Done: \texttt{references.bib}, called with \verb|\bibliography{references}| at the end of \texttt{main.tex}.
+
+\cm{10}{For tables, use all horizontal and vertical borders.}
+\re All seven tables use full borders.
+
+\cm{11}{Check 1-to-1 with the Word template.}
+\re Checked page geometry, title and author block, abstract and keywords, heading styles, 8-pt captions, table borders and reference style against the template. Title and abstract contain no symbols or mathematics, as the template requires.
+
+\cm{12}{Index terms should be keywords.}
+\re Done.
+
+\cm{13}{Some space after the abstract, before the keywords.}
+\re Added 6\,pt of space.
+
+\cm{14}{Figure caption left aligned.}
+\re Done, with your caption settings.
+
+\cm{15}{Table caption should stay on one line.}
+\re All table captions are on one line. Your table caption command does not set a font size, so captions defaulted to 10\,pt and wrapped; \texttt{font=footnotesize} (8\,pt, as the template's table head) was added and long captions were shortened.
+
+\cm{16}{Use the given commands for figure, table and keyword settings.}
+\re Included as given (\texttt{balance}, \texttt{caption} formats, \verb|\BibTeX|, \verb|\parskip|, \verb|\IEEEkeywordsname|), with the font size addition explained above. Keywords are in alphabetical order: deep reinforcement learning, generalization, policy sharing, SUMO, traffic signal control.
+
+\cm{17}{Edit paragraphs whose last line has only 1--2 words.}
+\re Done for all such paragraphs by small rewording.
+
+\cm{18}{Title: ``Generalized Deep Reinforcement Learning for Traffic Signal Control''.}
+\re Changed.
+
+\cm{19}{Abstract: state actual performance values instead of improvement percentages.}
+\re The abstract now gives waiting times, e.g.\ A2C 13.5\,s and 10.0\,s vs.\ 32.5\,s and 24.2\,s for fixed-time control on the single-intersection scenarios, and 25.2\,s and 23.2\,s vs.\ 52.3\,s and 48.8\,s at the unseen heavy demand.
+
+\cm{20}{Introduction: ``the contributions of this study are \ldots where \ldots is considered the main novelty''.}
+\re The last paragraph of Section I lists contributions (i)--(iv) and ends: ``The generalization-focused evaluation of DRL signal controllers on demand levels not encountered during training is considered the main novelty.''
+
+\cm{21}{What is the exact novelty? Is it evaluating whether DRL controllers generalize to demand levels not encountered during training?}
+\re Yes. The novelty is this generalization-focused evaluation, carried out as a controlled comparison of four DRL algorithms on real-city scenarios, together with the finding that rare gridlock failures, not average performance, separate the learners. Section II and Table I position this against recent work.
+
+\cm{22}{Introduction: clearly mention the usefulness of this work.}
+\re New paragraph in Section I: the work shows agencies and researchers which algorithm keeps its benefit on unseen traffic and how often each fails, provides a reusable test protocol, and is the first stage of the edge--cloud study.
+
+\cm{23}{Introduction: why DQN, Double DQN, PPO and A2C?}
+\re Section I: they represent the two main DRL families for signal control (value-based: DQN, and Double DQN, which corrects DQN's over-estimation; actor-critic: A2C, and PPO, which limits the policy update size); independent DQN and PPO were the strongest methods on RESCO; and all four have mature, comparable implementations.
+
+\cm{24}{Introduction: how the real-city scenarios are considered; dataset names.}
+\re Section I and Section IV-A: cologne1, ingolstadt1 and cologne3 from the RESCO benchmark, derived from the TAPASCologne and InTAS traffic models, with real road geometry and calibrated peak-hour demand.
+
+\cm{25}{Define the reward and performance objectives precisely.}
+\re Section III: waiting load $W^i_t$ (Eq.~2), reward (Eq.~3) and average total waiting time $\bar{w}$ (Eq.~4).
+
+\cm{26}{Are all equations and notations correct?}
+\re All were checked against the code, and these errors were corrected: the reward lacked the division by 100 used by sumo-rl; $\alpha$ denoted both the demand scale and the significance level (the latter is now written out); the lane features are now described exactly (vehicles and halted vehicles divided by lane capacity); the DQN networks $\theta$ and $\bar\theta$ are now defined; and actions are indexed $0,\dots,P_i-1$, consistent with the modulo mapping.
+
+\cm{27}{Section IV-B: distinguish demand-level generalization from route-pattern, temporal and network-level generalization.}
+\re New paragraph in Section IV-B: the protocol changes the amount and timing of traffic only; routes, time-of-day profile and network are those of the training data, so route-pattern, temporal and network-level generalization are not tested.
+
+\cm{28}{Section IV-D: justify the shared policy and its action mapping; how it handles different numbers and meanings of green phases.}
+\re Section IV-D: sharing pools the experience of all intersections and needs only one model; inputs are zero-padded with a one-hot intersection identifier; each signal keeps its own phase order, so the identifier tells the network which meaning action $k$ has; surplus actions are mapped by $a \bmod P_i$.
+
+\cm{29}{How valid phases are represented, whether invalid actions are masked, how phase semantics are kept consistent; alternative mapping if aliasing occurs.}
+\re Section IV-D: valid phases are the signal program's green phases in program order; invalid actions were not masked; semantics are not aligned across intersections but disambiguated by the identifier. The mapping causes aliasing at the three-phase signal of cologne3 (actions 0 and 3 both select phase 0); valid-action masking was implemented as the alternative (comment 31).
+
+\cm{30}{State whether invalid actions are masked, phase ordering, and handling of unavailable phases.}
+\re Stated in Section IV-D: not masked in the main experiments; each signal keeps its own program order; unavailable phases are mapped to $a \bmod P_i$.
+
+\cm{31}{Compare with an explicit valid-action mask where feasible.}
+\re Done. A masked variant (impossible phases get logit $-10^9$, i.e.\ zero probability; same 11,845 parameters) was trained with the same seeds and budget (Table VI, Section VI-D). It is the most consistent variant on unseen demand (16.8\,$\pm$\,0.7\,s) but fails in 4 of 50 episodes and is worse over all test files ($p=0.032$). Masking therefore does not explain or remove the failures; this result also led to the more cautious ablation conclusion above.
+
+\cm{32}{Policy-sharing ablation for cologne3 under matched budgets, seeds, hyperparameters and evaluation; report parameters, training cost and per-intersection performance.}
+\re Done (Table VI, Table VII, Section VI-D): same seeds, hyperparameters, interaction budget and test files; 34,373 parameters for independent policies vs.\ 11,845 shared; 3.4 vs.\ 4.0 CPU-hours for five runs; per-intersection mean queues in Table VII, which show that the failures occur at the largest junction (signal C).
+
+\cm{33}{If the independent-policy experiment cannot be completed, present it as an unverified hypothesis.}
+\re The experiment was completed. Because the effect on failures is not established with five seeds (see comment 31), it is reported as indicative, not as a demonstrated benefit.
+
+\cm{34}{Section III: justify the reward and its relationship to average total waiting time.}
+\re Section III: the waiting added to $W^i$ over an episode corresponds to the halting time on the intersection's approaches, which is the on-road part of $\bar{w}$.
+
+\cm{35}{How accumulated waiting is computed, whether it includes vehicles waiting to enter, and how the reward behaves as vehicles enter, leave or remain.}
+\re Section III: SUMO's accumulated waiting time (speed at most 0.1\,m/s) per vehicle and lane; vehicles waiting to enter or queued upstream are not included; an entering vehicle adds nothing, each halted vehicle adds up to 5\,s per step, and a vehicle crossing the stop line removes its accumulated waiting.
+
+\cm{36}{Is the reward a reliable signal under congestion; can it favour short-term reductions over network-wide performance?}
+\re Section III: no; it is local and myopic, cannot see spillback or vehicles held outside the network, and under heavy congestion gives similar negative rewards for every action. Section VI links this to the cologne3 failures.
+
+\cm{37}{Report training time, hardware and computational budget for every algorithm; how equal tuning budgets are enforced.}
+\re Section V-A and Table III: Intel Core i5-8250U, 8\,GB RAM, six runs in parallel; minutes and gradient updates per run for every algorithm and scenario; 80 runs, 56 CPU-run hours in total. Correction: the earlier draft said all algorithms received the same tuning budget; in fact no algorithm was tuned (hyperparameters fixed in advance), which is now stated, together with the deviations from library defaults and the different numbers of gradient updates (143k for DQN vs.\ 28.8k for A2C).
+
+\cm{38}{Clarify action timing, minimum green, yellow transitions and safety enforcement.}
+\re Section III: a decision every 5\,s; a change only after yellow plus 5\,s minimum green since the last change; a yellow of the plan's length on every change.
+
+\cm{39}{How actions are applied in SUMO, interaction of minimum green with decision timing, and prevention of conflicting greens.}
+\re Section III: the chosen green state is set through TraCI after the yellow state; requests during the minimum green keep the current phase; the agent chooses only among the original program's conflict-free green phases, so conflicting movements never receive green together.
+
+\cm{40}{Define the waiting-time metric precisely: how its components are obtained, double counting, unfinished trips.}
+\re Section III (Eq.~4) and Section V-B: insertion delay and halting time are read from SUMO's per-vehicle trip records, written for every vehicle including unfinished and not-yet-inserted ones; a vehicle can contribute to both terms but in non-overlapping periods, so nothing is counted twice.
+
+\cm{41}{Scalability and transferability of the shared policy; is the identifier specific to the training network?}
+\re Section IV-D: yes, the identifier encodes the fixed training intersections; the policy works under new demand at the same intersections but not at a new intersection or city without retraining; an identifier-free, movement-based representation (as in UniTSA) would be needed.
+
+\cm{42}{Provide complete hyperparameters.}
+\re Table III: optimizer, learning rate, discount, batch or rollout, exploration or entropy, GAE, value coefficient, gradient clipping, replay and target settings, read from the saved models.
+
+\cm{43}{Comparison table with the latest related work; justify the novelty.}
+\re Table I compares six recent studies (2021--2026) with this work, and the paragraph above it justifies the novelty. The ticks are being checked against the full papers.
+
+\cm{44}{Explain how duplicate trips and shifted departures are handled.}
+\re Section IV-B: a duplicate keeps origin, destination and route with a new vehicle identifier, and every copy draws its own departure shift, clipped to the hour, so duplicates do not depart together.
+
+\cm{45}{Mathematical definition of average total waiting time; how incomplete trips are counted.}
+\re Eq.~(4) in Section III; incomplete trips are counted with the waiting accumulated until the end of the hour.
+
+\cm{46}{Limitations of intersection identifiers and transfer to unseen intersections.}
+\re Section IV-D and the closing paragraph of Section VI (see comment 41).
+
+\cm{47}{Complete learning curves with variability across seeds and a fixed-time reference.}
+\re Fig.~2 shows every validation check from episode 10 to 200 on a logarithmic scale (no clipping), with the median and interquartile range across the five seeds and the fixed-time reference.
+
+\cm{48}{GitHub link or supporting website for reproducibility.}
+\re The code, data splits and results are linked in Section V-A: \url{https://github.com/Konara98/icarc_dataset_scripts}.
+
+\cm{49}{Upload to the Stanford Agentic Reviewer and refine the paper.}
+\re Will be done after this round of revisions; the review and the resulting changes will be shared.
+
+\end{enumerate}
+
+\end{document}

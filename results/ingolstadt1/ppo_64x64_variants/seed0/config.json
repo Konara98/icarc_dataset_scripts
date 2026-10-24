@@ -1,0 +1,70 @@
+{
+  "scenario": "ingolstadt1",
+  "algo": "ppo",
+  "seed": 0,
+  "episodes": 200,
+  "val_every": 10,
+  "net": [
+    64,
+    64
+  ],
+  "train_set": "variants",
+  "lr": null,
+  "hyperparameters": {
+    "learning_rate": 0.0003,
+    "n_steps": 720,
+    "batch_size": 144,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "gae_lambda": 0.95,
+    "clip_range": 0.2,
+    "ent_coef": 0.01
+  },
+  "traffic_lights": [
+    "gneJ207"
+  ],
+  "inputs": 18,
+  "actions": 3,
+  "yellow_s": 3,
+  "decision_s": 5,
+  "min_green_s": 5,
+  "train_files": [
+    "ingolstadt1_x0.8_v0.rou.xml",
+    "ingolstadt1_x0.8_v1.rou.xml",
+    "ingolstadt1_x0.8_v2.rou.xml",
+    "ingolstadt1_x0.8_v3.rou.xml",
+    "ingolstadt1_x0.9_v0.rou.xml",
+    "ingolstadt1_x0.9_v1.rou.xml",
+    "ingolstadt1_x0.9_v2.rou.xml",
+    "ingolstadt1_x0.9_v3.rou.xml",
+    "ingolstadt1_x1.0_v0.rou.xml",
+    "ingolstadt1_x1.0_v1.rou.xml",
+    "ingolstadt1_x1.0_v2.rou.xml",
+    "ingolstadt1_x1.0_v3.rou.xml",
+    "ingolstadt1_x1.1_v0.rou.xml",
+    "ingolstadt1_x1.1_v1.rou.xml",
+    "ingolstadt1_x1.1_v2.rou.xml",
+    "ingolstadt1_x1.1_v3.rou.xml",
+    "ingolstadt1_x1.2_v0.rou.xml",
+    "ingolstadt1_x1.2_v1.rou.xml",
+    "ingolstadt1_x1.2_v2.rou.xml",
+    "ingolstadt1_x1.2_v3.rou.xml"
+  ],
+  "val_files": [
+    "ingolstadt1_x0.8_v0.rou.xml",
+    "ingolstadt1_x0.9_v0.rou.xml",
+    "ingolstadt1_x1.0_v0.rou.xml",
+    "ingolstadt1_x1.1_v0.rou.xml",
+    "ingolstadt1_x1.2_v0.rou.xml"
+  ],
+  "versions": {
+    "python": "3.12.0",
+    "torch": "2.14.1+cpu",
+    "stable_baselines3": "2.9.0"
+  },
+  "started": "2026-10-17 23:47:03",
+  "finished": "2026-10-18 00:13:24",
+  "train_seconds": 1580,
+  "best_val_avg_total_wait": 6.628636555974227,
+  "best_episode": 60
+}

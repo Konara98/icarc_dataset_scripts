@@ -8,47 +8,47 @@
     {
       "max_gap": 2.0,
       "max_scale": 1.5,
-      "val_score": 50.873200000000004
+      "val_score": 50.8512
     },
     {
       "max_gap": 2.0,
       "max_scale": 2.0,
-      "val_score": 55.2644
+      "val_score": 54.265
     },
     {
       "max_gap": 2.0,
       "max_scale": 3.0,
-      "val_score": 45.1796
+      "val_score": 48.2306
     },
     {
       "max_gap": 3.0,
       "max_scale": 1.5,
-      "val_score": 49.4452
+      "val_score": 53.8486
     },
     {
       "max_gap": 3.0,
       "max_scale": 2.0,
-      "val_score": 49.0536
+      "val_score": 49.324
     },
     {
       "max_gap": 3.0,
       "max_scale": 3.0,
-      "val_score": 50.3852
+      "val_score": 49.6112
     },
     {
       "max_gap": 4.0,
       "max_scale": 1.5,
-      "val_score": 50.0782
+      "val_score": 48.3916
     },
     {
       "max_gap": 4.0,
       "max_scale": 2.0,
-      "val_score": 45.9244
+      "val_score": 58.560599999999994
     },
     {
       "max_gap": 4.0,
       "max_scale": 3.0,
-      "val_score": 48.553399999999996
+      "val_score": 48.4002
     }
   ]
 }

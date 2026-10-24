@@ -1,0 +1,40 @@
+\section{Experimental Setup}
+\label{sec:setup}
+
+\subsection{Simulation, Training and Hyperparameters}
+All controllers run in SUMO 1.27.1 through libsumo and sumo-rl 1.4.5. Teleporting of stuck vehicles is disabled and vehicles that cannot enter a congested network wait at the entry for as long as needed, so jams remain visible in the metrics. Each learner is trained for 200 episodes of one simulated hour with five independent seeds, which is an equal interaction budget of 144{,}000 decisions per signal, and validated every 10 episodes; the validation-best checkpoint is evaluated once on the test files. Table~\ref{tab:hyper} lists the complete hyperparameters. The hyperparameters were fixed before the experiments and not tuned for any algorithm, so no method was favoured by extra tuning effort. A2C and PPO use the Stable-Baselines3 defaults except an entropy bonus of 0.01 and, for PPO, a one-episode rollout of 720 steps with minibatches of 144; DQN and Double DQN use a smaller replay buffer and more frequent updates and target copies than the defaults, to suit the short budget. Equal interaction does not imply equal optimization effort, so Table~\ref{tab:hyper} also reports the gradient updates and wall-clock time of each run. Training ran on a workstation with an Intel Core i5-8250U CPU (4 cores, 8 threads, 1.6\,GHz) and 8\,GB of RAM, with six runs in parallel; the 80 training runs took 56 CPU-run hours in total. Code, data splits and results are available at \url{https://github.com/Konara98/icarc_dataset_scripts}.
+
+\begin{table}[t]
+\caption{Hyperparameters and Training Cost}
+\label{tab:hyper}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{|>{\raggedright\arraybackslash}p{1.95cm}|>{\raggedright\arraybackslash}p{1.95cm}|>{\raggedright\arraybackslash}p{1.95cm}|>{\raggedright\arraybackslash}p{1.65cm}|}
+\hline
+\textbf{Parameter} & \textbf{DQN, DDQN} & \textbf{PPO} & \textbf{A2C} \\
+\hline
+Network & \multicolumn{3}{l|}{MLP $64\!\times\!64$, ReLU; discount $\gamma = 0.99$} \\
+\hline
+Optimizer, learning rate & Adam, $10^{-3}$ & Adam, $3\!\times\!10^{-4}$ & RMSprop, $7\!\times\!10^{-4}$ \\
+\hline
+Samples per update & batch 64 from 50k replay buffer & rollout 720, 10 epochs of batch 144 & rollout 5 \\
+\hline
+Exploration & $\epsilon$: $1\!\rightarrow\!0.02$ in first 10\% & entropy 0.01 & entropy 0.01 \\
+\hline
+Other & start 1000 steps, hard target update every 500 & clip 0.2, GAE 0.95, value coef.\ 0.5 & GAE 1.0, value coef.\ 0.5 \\
+\hline
+Gradient-norm clip & 10 & 0.5 & 0.5 \\
+\hline
+Gradient updates per run & 143k & 10k (30k on cologne3) & 28.8k \\
+\hline
+Minutes per run\textsuperscript{a} & DQN 44 / 37 / 68, DDQN 58 / 38 / 68 & 37 / 26 / 54 & 34 / 27 / 48 \\
+\hline
+\end{tabular}
+\tablenote{\textsuperscript{a}cologne1 / ingolstadt1 / cologne3, mean over 5 seeds, six runs in parallel.}
+\end{table}
+
+\subsection{Evaluation}
+The average total waiting time $\bar{w}$ of (\ref{eq:wbar}) is the main metric. Its two terms are read from SUMO's per-vehicle trip records, which are written for every vehicle including those still driving or still waiting to enter at the end of the hour: $d_v$ is the recorded departure delay and $h_v$ the recorded waiting time. We also report the average travel time, the average number of stops and the completion rate, the percentage of vehicles that finish their trip. An episode is counted as failed if its $\bar{w}$ exceeds twice that of fixed-time control on the same test file; such episodes correspond to gridlock.
+
+For each seed, metrics are averaged over the test files of a demand level, and we report the mean $\pm$ standard deviation over five seeds together with the median and the number of failed episodes, since a single failed seed dominates the mean~\cite{agarwal2021precipice}. Learners are compared with fixed-time control, a single deterministic plan, by a one-sample $t$-test on their five per-seed means, and with each other by Welch's $t$-test, at a significance level of 0.05. All controllers use the same SUMO seed on a given test file. SUMO is, however, not perfectly repeatable on cologne1 even with a fixed seed: identical fixed-time runs gave $\bar{w}$ of 30.0\,s or 31.3\,s, so single-episode differences of a few percent are not interpreted.

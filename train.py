@@ -16,6 +16,7 @@ so the same script handles cologne1, ingolstadt1 and the 3-light cologne3.
   python train.py --scenario cologne3 --algo ppo --seed 3
   python train.py --scenario cologne1 --algo dqn --seed 0 --net 16 16          # smaller network
   python train.py --scenario cologne1 --algo dqn --seed 0 --train-set real     # ablation: real hour only
+  python train.py --scenario cologne3 --algo a2c-ind --seed 0                 # ablation: no policy sharing
 
 Use run_all.py to run many algorithms x seeds in parallel.
 
@@ -70,9 +71,17 @@ def main():
     name = f"[{s} {C.run_tag(a.algo, a.net, a.train_set)} seed{a.seed}]"
 
     venv = C.TrafficVecEnv(s, train_files, a.seed)
-    hp = dict(HYPER[a.algo], **({"learning_rate": a.lr} if a.lr else {}))
-    model = C.ALGOS[a.algo]("MlpPolicy", venv, seed=a.seed, device="cpu", verbose=0,
-                            policy_kwargs=dict(net_arch=list(a.net), activation_fn=th.nn.ReLU), **hp)
+    base = a.algo.split("-")[0]
+    hp = dict(HYPER[base], **({"learning_rate": a.lr} if a.lr else {}))
+    policy, pk = "MlpPolicy", dict(net_arch=list(a.net), activation_fn=th.nn.ReLU)
+    if "-" in a.algo and not venv.ad.tagged:
+        raise SystemExit(f"{a.algo} needs a scenario with several traffic lights (e.g. cologne3).")
+    if a.algo.endswith("-ind"):            # ablation C2: one independent network per traffic light
+        policy, pk["n_lights"] = C.IndependentPolicy, len(venv.ad.ids)
+    elif a.algo.endswith("-mask"):         # shared network with valid-action masking
+        policy = C.MaskedSharedPolicy
+        pk.update(n_lights=len(venv.ad.ids), light_phases=venv.ad.n_act)
+    model = C.ALGOS[a.algo](policy, venv, seed=a.seed, device="cpu", verbose=0, policy_kwargs=pk, **hp)
 
     config = dict(vars(a), hyperparameters=hp, traffic_lights=venv.ad.ids, inputs=venv.ad.obs_dim,
                   actions=venv.ad.n_actions, yellow_s=C.plan_yellow(s), decision_s=C.DELTA,

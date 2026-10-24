@@ -1,36 +1,221 @@
-Traceback (most recent call last):
-  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
-    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
-    ^^^^^^^^^^^^^^^^^^
-  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 31, in <module>
-    import torch as th
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py", line 2650, in <module>
-    from torch import _VF as _VF, functional as functional  # usort: skip
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\functional.py", line 8, in <module>
-    import torch.nn.functional as F
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\__init__.py", line 8, in <module>
-    from torch.nn.modules import *  # usort: skip # noqa: F403
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\__init__.py", line 1, in <module>
-    from .module import Module  # usort: skip
-    ^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\nn\modules\module.py", line 17, in <module>
-    from torch.utils._python_dispatch import is_traceable_wrapper_subclass
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\utils\_python_dispatch.py", line 14, in <module>
-    import torchgen.model
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\torchgen\model.py", line 1400, in <module>
-    @dataclass(frozen=True)
-     ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 1256, in wrap
-    return _process_class(cls, init, repr, eq, order, unsafe_hash,
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 1063, in _process_class
-    _init_fn(all_init_fields,
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 619, in _init_fn
-    return _create_fn('__init__',
-           ^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\dataclasses.py", line 473, in _create_fn
-    exec(txt, globals, ns)
-  File "<string>", line 0, in <module>
-KeyboardInterrupt
+[cologne1 ppo_64x64_variants seed0] ep 1/200 cologne1_x1.1_v0.rou.xml: total wait 416.7 s, reward -391.0, 9 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 2/200 cologne1_x1.1_v1.rou.xml: total wait 305.3 s, reward -153.6, 22 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 3/200 cologne1_x0.8_v1.rou.xml: total wait 88.3 s, reward -10.8, 29 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 4/200 cologne1_x1.0_v0.rou.xml: total wait 128.6 s, reward -22.0, 38 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 5/200 cologne1_x1.1_v3.rou.xml: total wait 124.7 s, reward -60.8, 49 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 6/200 cologne1_x0.9_v2.rou.xml: total wait 73.0 s, reward -0.3, 56 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 7/200 cologne1_x1.2_v3.rou.xml: total wait 170.5 s, reward -10.8, 66 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 8/200 cologne1_x0.9_v0.rou.xml: total wait 60.1 s, reward -1.8, 73 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 9/200 cologne1_x0.9_v3.rou.xml: total wait 33.6 s, reward -2.5, 79 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 10/200 cologne1_x0.9_v1.rou.xml: total wait 29.7 s, reward -10.0, 85 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 10: total wait 923.4 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 11/200 cologne1_x1.0_v1.rou.xml: total wait 33.4 s, reward -1.1, 142 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 12/200 cologne1_x0.8_v3.rou.xml: total wait 25.1 s, reward -0.8, 148 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 13/200 cologne1_x0.8_v2.rou.xml: total wait 23.8 s, reward -1.1, 154 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 14/200 cologne1_x1.0_v3.rou.xml: total wait 26.0 s, reward -0.6, 160 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 15/200 cologne1_x1.2_v1.rou.xml: total wait 46.0 s, reward -9.5, 168 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 16/200 cologne1_x0.8_v0.rou.xml: total wait 16.8 s, reward -2.2, 173 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 17/200 cologne1_x1.1_v2.rou.xml: total wait 32.8 s, reward -0.5, 181 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 18/200 cologne1_x1.2_v0.rou.xml: total wait 38.9 s, reward -3.6, 189 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 19/200 cologne1_x1.2_v2.rou.xml: total wait 36.6 s, reward -1.2, 196 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 20/200 cologne1_x1.0_v2.rou.xml: total wait 24.2 s, reward -0.8, 203 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 20: total wait 26.6 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 21/200 cologne1_x1.0_v1.rou.xml: total wait 19.0 s, reward -0.1, 237 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 22/200 cologne1_x0.8_v3.rou.xml: total wait 14.3 s, reward -1.0, 243 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 23/200 cologne1_x0.8_v2.rou.xml: total wait 13.4 s, reward -0.0, 248 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 24/200 cologne1_x1.0_v2.rou.xml: total wait 18.6 s, reward 0.0, 255 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 25/200 cologne1_x1.1_v3.rou.xml: total wait 30.7 s, reward -0.1, 261 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 26/200 cologne1_x1.0_v0.rou.xml: total wait 17.4 s, reward -0.0, 267 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 27/200 cologne1_x0.8_v1.rou.xml: total wait 11.5 s, reward -0.0, 272 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 28/200 cologne1_x0.9_v1.rou.xml: total wait 13.3 s, reward -1.2, 278 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 29/200 cologne1_x0.9_v2.rou.xml: total wait 15.9 s, reward -0.5, 284 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 30/200 cologne1_x1.1_v0.rou.xml: total wait 20.7 s, reward -0.9, 291 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 30: total wait 15.3 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 31/200 cologne1_x1.2_v3.rou.xml: total wait 38.1 s, reward -0.9, 324 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 32/200 cologne1_x1.2_v2.rou.xml: total wait 37.9 s, reward -0.7, 332 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 33/200 cologne1_x0.9_v3.rou.xml: total wait 12.5 s, reward -0.7, 338 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 34/200 cologne1_x1.1_v2.rou.xml: total wait 22.0 s, reward -0.2, 345 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 35/200 cologne1_x0.9_v0.rou.xml: total wait 13.4 s, reward -0.2, 351 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 36/200 cologne1_x1.2_v1.rou.xml: total wait 27.8 s, reward -0.1, 358 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 37/200 cologne1_x0.8_v0.rou.xml: total wait 10.7 s, reward -0.1, 363 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 38/200 cologne1_x1.2_v0.rou.xml: total wait 26.1 s, reward -1.3, 371 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 39/200 cologne1_x1.0_v3.rou.xml: total wait 17.7 s, reward -1.1, 377 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 40/200 cologne1_x1.1_v1.rou.xml: total wait 24.7 s, reward -0.5, 384 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 40: total wait 14.5 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 41/200 cologne1_x0.8_v2.rou.xml: total wait 10.7 s, reward -1.3, 415 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 42/200 cologne1_x1.1_v0.rou.xml: total wait 33.0 s, reward -0.3, 422 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 43/200 cologne1_x0.8_v0.rou.xml: total wait 12.6 s, reward -0.2, 428 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 44/200 cologne1_x1.1_v3.rou.xml: total wait 24.9 s, reward -1.1, 435 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 45/200 cologne1_x1.0_v2.rou.xml: total wait 19.6 s, reward -0.3, 441 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 46/200 cologne1_x0.8_v3.rou.xml: total wait 10.3 s, reward -1.6, 446 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 47/200 cologne1_x1.0_v3.rou.xml: total wait 17.8 s, reward -0.3, 453 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 48/200 cologne1_x0.9_v1.rou.xml: total wait 11.7 s, reward -1.1, 461 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 49/200 cologne1_x1.1_v1.rou.xml: total wait 21.1 s, reward -0.9, 469 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 50/200 cologne1_x0.8_v1.rou.xml: total wait 10.8 s, reward -0.0, 475 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 50: total wait 14.4 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 51/200 cologne1_x1.1_v2.rou.xml: total wait 19.1 s, reward -0.8, 516 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 52/200 cologne1_x1.0_v1.rou.xml: total wait 13.8 s, reward -1.1, 523 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 53/200 cologne1_x1.0_v0.rou.xml: total wait 16.3 s, reward -0.2, 530 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 54/200 cologne1_x0.9_v2.rou.xml: total wait 11.1 s, reward -1.5, 536 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 55/200 cologne1_x1.2_v0.rou.xml: total wait 27.8 s, reward -0.6, 545 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 56/200 cologne1_x0.9_v0.rou.xml: total wait 11.7 s, reward 0.0, 551 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 57/200 cologne1_x0.9_v3.rou.xml: total wait 10.4 s, reward -0.0, 557 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 58/200 cologne1_x1.2_v1.rou.xml: total wait 28.4 s, reward -0.3, 565 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 59/200 cologne1_x1.2_v3.rou.xml: total wait 29.3 s, reward -0.3, 574 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 60/200 cologne1_x1.2_v2.rou.xml: total wait 34.9 s, reward 0.0, 582 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 60: total wait 13.9 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 61/200 cologne1_x1.0_v2.rou.xml: total wait 14.3 s, reward -0.2, 617 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 62/200 cologne1_x1.2_v0.rou.xml: total wait 24.7 s, reward -0.6, 625 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 63/200 cologne1_x1.1_v3.rou.xml: total wait 20.8 s, reward -0.5, 632 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 64/200 cologne1_x0.8_v3.rou.xml: total wait 9.1 s, reward -0.0, 637 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 65/200 cologne1_x1.0_v1.rou.xml: total wait 14.0 s, reward -0.6, 642 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 66/200 cologne1_x1.0_v0.rou.xml: total wait 14.5 s, reward -0.1, 647 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 67/200 cologne1_x0.9_v0.rou.xml: total wait 11.3 s, reward -1.0, 653 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 68/200 cologne1_x1.0_v3.rou.xml: total wait 13.5 s, reward -0.8, 662 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 69/200 cologne1_x0.8_v1.rou.xml: total wait 9.0 s, reward -0.0, 670 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 70/200 cologne1_x1.1_v2.rou.xml: total wait 17.1 s, reward -0.8, 678 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 70: total wait 14.5 s
+[cologne1 ppo_64x64_variants seed0] ep 71/200 cologne1_x0.9_v1.rou.xml: total wait 10.4 s, reward -0.1, 712 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 72/200 cologne1_x1.2_v3.rou.xml: total wait 29.1 s, reward -0.3, 720 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 73/200 cologne1_x1.2_v2.rou.xml: total wait 27.0 s, reward -0.8, 729 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 74/200 cologne1_x0.9_v2.rou.xml: total wait 11.2 s, reward -0.0, 737 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 75/200 cologne1_x1.1_v1.rou.xml: total wait 15.1 s, reward -0.1, 744 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 76/200 cologne1_x1.2_v1.rou.xml: total wait 25.5 s, reward -1.0, 751 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 77/200 cologne1_x0.8_v2.rou.xml: total wait 9.8 s, reward 0.0, 757 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 78/200 cologne1_x1.1_v0.rou.xml: total wait 18.8 s, reward -0.7, 766 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 79/200 cologne1_x0.8_v0.rou.xml: total wait 8.6 s, reward -0.5, 772 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 80/200 cologne1_x0.9_v3.rou.xml: total wait 10.4 s, reward -0.5, 777 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 80: total wait 14.9 s
+[cologne1 ppo_64x64_variants seed0] ep 81/200 cologne1_x1.2_v3.rou.xml: total wait 77.7 s, reward -516.1, 812 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 82/200 cologne1_x1.1_v0.rou.xml: total wait 19.2 s, reward -0.5, 819 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 83/200 cologne1_x1.0_v2.rou.xml: total wait 14.7 s, reward 0.0, 825 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 84/200 cologne1_x0.9_v3.rou.xml: total wait 10.5 s, reward -0.6, 830 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 85/200 cologne1_x1.0_v1.rou.xml: total wait 13.0 s, reward -0.0, 837 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 86/200 cologne1_x0.8_v2.rou.xml: total wait 9.3 s, reward -0.0, 842 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 87/200 cologne1_x0.8_v3.rou.xml: total wait 9.9 s, reward -0.4, 848 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 88/200 cologne1_x1.1_v2.rou.xml: total wait 19.8 s, reward -0.2, 855 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 89/200 cologne1_x0.8_v0.rou.xml: total wait 8.4 s, reward -0.3, 861 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 90/200 cologne1_x1.1_v3.rou.xml: total wait 17.5 s, reward -0.0, 868 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 90: total wait 13.7 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 91/200 cologne1_x0.9_v0.rou.xml: total wait 11.2 s, reward -0.0, 899 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 92/200 cologne1_x1.2_v0.rou.xml: total wait 29.5 s, reward -0.5, 906 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 93/200 cologne1_x0.8_v1.rou.xml: total wait 8.5 s, reward -0.0, 911 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 94/200 cologne1_x1.0_v3.rou.xml: total wait 14.9 s, reward -0.7, 918 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 95/200 cologne1_x0.9_v1.rou.xml: total wait 9.7 s, reward -0.9, 925 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 96/200 cologne1_x1.0_v0.rou.xml: total wait 12.6 s, reward -0.2, 933 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 97/200 cologne1_x1.2_v1.rou.xml: total wait 27.4 s, reward -0.3, 940 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 98/200 cologne1_x0.9_v2.rou.xml: total wait 10.2 s, reward -0.2, 946 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 99/200 cologne1_x1.2_v2.rou.xml: total wait 28.6 s, reward -0.3, 954 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 100/200 cologne1_x1.1_v1.rou.xml: total wait 14.2 s, reward -0.5, 960 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 100: total wait 12.6 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 101/200 cologne1_x1.2_v1.rou.xml: total wait 23.9 s, reward -0.2, 991 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 102/200 cologne1_x1.1_v0.rou.xml: total wait 442.6 s, reward -1829.3, 1006 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 103/200 cologne1_x1.2_v0.rou.xml: total wait 24.5 s, reward -0.9, 1013 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 104/200 cologne1_x1.0_v0.rou.xml: total wait 12.9 s, reward -0.2, 1019 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 105/200 cologne1_x0.9_v3.rou.xml: total wait 9.5 s, reward -0.0, 1025 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 106/200 cologne1_x1.1_v1.rou.xml: total wait 18.4 s, reward -0.2, 1031 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 107/200 cologne1_x0.8_v3.rou.xml: total wait 9.7 s, reward -0.3, 1037 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 108/200 cologne1_x1.0_v2.rou.xml: total wait 14.0 s, reward -0.6, 1043 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 109/200 cologne1_x1.0_v1.rou.xml: total wait 13.4 s, reward -0.2, 1049 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 110/200 cologne1_x0.9_v2.rou.xml: total wait 11.1 s, reward -0.4, 1057 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 110: total wait 15.8 s
+[cologne1 ppo_64x64_variants seed0] ep 111/200 cologne1_x1.0_v3.rou.xml: total wait 14.1 s, reward -0.3, 1089 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 112/200 cologne1_x0.9_v0.rou.xml: total wait 10.6 s, reward -0.0, 1095 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 113/200 cologne1_x1.1_v3.rou.xml: total wait 19.6 s, reward -0.2, 1102 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 114/200 cologne1_x1.1_v2.rou.xml: total wait 17.2 s, reward -0.6, 1109 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 115/200 cologne1_x0.9_v1.rou.xml: total wait 9.3 s, reward -0.3, 1115 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 116/200 cologne1_x0.8_v2.rou.xml: total wait 9.0 s, reward -0.0, 1120 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 117/200 cologne1_x0.8_v0.rou.xml: total wait 8.5 s, reward -0.0, 1126 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 118/200 cologne1_x0.8_v1.rou.xml: total wait 9.0 s, reward -0.0, 1131 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 119/200 cologne1_x1.2_v2.rou.xml: total wait 29.6 s, reward -0.1, 1138 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 120/200 cologne1_x1.2_v3.rou.xml: total wait 26.1 s, reward -0.4, 1146 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 120: total wait 13.3 s
+[cologne1 ppo_64x64_variants seed0] ep 121/200 cologne1_x1.1_v3.rou.xml: total wait 16.0 s, reward -0.0, 1178 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 122/200 cologne1_x1.2_v2.rou.xml: total wait 26.4 s, reward -0.2, 1186 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 123/200 cologne1_x1.0_v2.rou.xml: total wait 12.5 s, reward -0.2, 1191 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 124/200 cologne1_x0.9_v2.rou.xml: total wait 9.8 s, reward -0.1, 1198 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 125/200 cologne1_x0.9_v3.rou.xml: total wait 1318.5 s, reward -1819.7, 1219 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 126/200 cologne1_x0.8_v0.rou.xml: total wait 8.4 s, reward -0.1, 1225 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 127/200 cologne1_x1.0_v3.rou.xml: total wait 12.2 s, reward -0.0, 1232 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 128/200 cologne1_x0.9_v0.rou.xml: total wait 9.2 s, reward -0.0, 1238 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 129/200 cologne1_x0.8_v1.rou.xml: total wait 8.1 s, reward -0.4, 1243 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 130/200 cologne1_x0.8_v3.rou.xml: total wait 7.9 s, reward -0.5, 1249 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 130: total wait 12.0 s  <- best so far, saved
+[cologne1 ppo_64x64_variants seed0] ep 131/200 cologne1_x0.9_v1.rou.xml: total wait 8.2 s, reward -0.3, 1283 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 132/200 cologne1_x0.8_v2.rou.xml: total wait 8.6 s, reward -0.0, 1288 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 133/200 cologne1_x1.0_v1.rou.xml: total wait 11.8 s, reward -0.2, 1295 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 134/200 cologne1_x1.2_v1.rou.xml: total wait 25.5 s, reward -0.1, 1303 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 135/200 cologne1_x1.1_v2.rou.xml: total wait 14.4 s, reward -0.6, 1310 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 136/200 cologne1_x1.2_v3.rou.xml: total wait 25.6 s, reward -0.3, 1318 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 137/200 cologne1_x1.1_v1.rou.xml: total wait 393.0 s, reward -1839.4, 1332 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 138/200 cologne1_x1.0_v0.rou.xml: total wait 12.0 s, reward 0.0, 1338 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 139/200 cologne1_x1.1_v0.rou.xml: total wait 15.5 s, reward -0.2, 1345 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 140/200 cologne1_x1.2_v0.rou.xml: total wait 25.1 s, reward -0.6, 1353 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 140: total wait 12.9 s
+[cologne1 ppo_64x64_variants seed0] ep 141/200 cologne1_x0.8_v1.rou.xml: total wait 8.1 s, reward -0.0, 1384 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 142/200 cologne1_x1.2_v2.rou.xml: total wait 27.8 s, reward -0.2, 1391 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 143/200 cologne1_x1.2_v1.rou.xml: total wait 20.4 s, reward -1.4, 1397 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 144/200 cologne1_x0.8_v2.rou.xml: total wait 8.6 s, reward -0.0, 1403 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 145/200 cologne1_x0.8_v0.rou.xml: total wait 8.2 s, reward -0.1, 1408 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 146/200 cologne1_x1.2_v3.rou.xml: total wait 25.0 s, reward -0.4, 1415 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 147/200 cologne1_x1.0_v2.rou.xml: total wait 12.1 s, reward 0.0, 1422 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 148/200 cologne1_x0.8_v3.rou.xml: total wait 7.4 s, reward -0.2, 1427 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 149/200 cologne1_x1.0_v1.rou.xml: total wait 12.6 s, reward -0.1, 1433 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 150/200 cologne1_x1.0_v3.rou.xml: total wait 11.5 s, reward -0.6, 1439 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 150: total wait 164.4 s
+[cologne1 ppo_64x64_variants seed0] ep 151/200 cologne1_x1.1_v2.rou.xml: total wait 15.7 s, reward -0.8, 1480 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 152/200 cologne1_x0.9_v2.rou.xml: total wait 10.1 s, reward -0.1, 1486 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 153/200 cologne1_x1.1_v1.rou.xml: total wait 16.9 s, reward -0.1, 1492 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 154/200 cologne1_x1.2_v0.rou.xml: total wait 25.3 s, reward -0.6, 1499 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 155/200 cologne1_x1.1_v3.rou.xml: total wait 15.8 s, reward -0.1, 1506 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 156/200 cologne1_x0.9_v1.rou.xml: total wait 9.1 s, reward -0.1, 1512 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 157/200 cologne1_x0.9_v0.rou.xml: total wait 9.3 s, reward -1.1, 1518 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 158/200 cologne1_x1.1_v0.rou.xml: total wait 15.9 s, reward -0.2, 1524 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 159/200 cologne1_x1.0_v0.rou.xml: total wait 11.9 s, reward -0.1, 1531 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 160/200 cologne1_x0.9_v3.rou.xml: total wait 9.3 s, reward -0.5, 1536 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 160: total wait 87.9 s
+[cologne1 ppo_64x64_variants seed0] ep 161/200 cologne1_x0.8_v3.rou.xml: total wait 7.6 s, reward -0.1, 1574 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 162/200 cologne1_x1.1_v3.rou.xml: total wait 1374.1 s, reward -1803.5, 1595 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 163/200 cologne1_x0.9_v2.rou.xml: total wait 10.4 s, reward -0.2, 1600 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 164/200 cologne1_x0.8_v1.rou.xml: total wait 8.5 s, reward -0.6, 1606 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 165/200 cologne1_x0.8_v0.rou.xml: total wait 8.9 s, reward -0.1, 1611 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 166/200 cologne1_x1.0_v0.rou.xml: total wait 12.3 s, reward -0.2, 1618 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 167/200 cologne1_x1.2_v1.rou.xml: total wait 22.6 s, reward -0.6, 1626 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 168/200 cologne1_x1.0_v1.rou.xml: total wait 12.4 s, reward -0.1, 1632 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 169/200 cologne1_x1.2_v0.rou.xml: total wait 21.0 s, reward -0.1, 1639 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 170/200 cologne1_x0.9_v0.rou.xml: total wait 9.8 s, reward -0.0, 1645 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 170: total wait 12.0 s
+[cologne1 ppo_64x64_variants seed0] ep 171/200 cologne1_x1.0_v3.rou.xml: total wait 11.5 s, reward -0.6, 1676 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 172/200 cologne1_x1.2_v3.rou.xml: total wait 23.0 s, reward -0.5, 1683 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 173/200 cologne1_x1.1_v0.rou.xml: total wait 15.3 s, reward -0.5, 1690 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 174/200 cologne1_x0.9_v1.rou.xml: total wait 9.0 s, reward -0.1, 1695 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 175/200 cologne1_x0.8_v2.rou.xml: total wait 8.2 s, reward -0.0, 1701 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 176/200 cologne1_x1.1_v1.rou.xml: total wait 15.0 s, reward -0.1, 1707 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 177/200 cologne1_x1.1_v2.rou.xml: total wait 16.5 s, reward -0.5, 1714 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 178/200 cologne1_x1.2_v2.rou.xml: total wait 19.1 s, reward -0.8, 1721 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 179/200 cologne1_x1.0_v2.rou.xml: total wait 11.3 s, reward 0.0, 1727 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 180/200 cologne1_x0.9_v3.rou.xml: total wait 8.4 s, reward -0.1, 1732 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 180: total wait 12.1 s
+[cologne1 ppo_64x64_variants seed0] ep 181/200 cologne1_x1.2_v0.rou.xml: total wait 24.1 s, reward -0.5, 1764 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 182/200 cologne1_x1.1_v2.rou.xml: total wait 17.5 s, reward -0.9, 1771 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 183/200 cologne1_x0.8_v1.rou.xml: total wait 7.8 s, reward -0.0, 1777 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 184/200 cologne1_x0.8_v3.rou.xml: total wait 7.7 s, reward -0.2, 1782 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 185/200 cologne1_x1.1_v0.rou.xml: total wait 16.6 s, reward -0.3, 1789 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 186/200 cologne1_x1.2_v3.rou.xml: total wait 22.0 s, reward -0.5, 1796 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 187/200 cologne1_x0.9_v0.rou.xml: total wait 8.7 s, reward -0.0, 1803 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 188/200 cologne1_x0.9_v1.rou.xml: total wait 9.6 s, reward -0.1, 1809 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 189/200 cologne1_x1.0_v3.rou.xml: total wait 12.6 s, reward -0.1, 1816 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 190/200 cologne1_x0.9_v3.rou.xml: total wait 9.2 s, reward -0.3, 1822 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 190: total wait 12.4 s
+[cologne1 ppo_64x64_variants seed0] ep 191/200 cologne1_x1.0_v1.rou.xml: total wait 12.9 s, reward -0.1, 1856 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 192/200 cologne1_x0.8_v2.rou.xml: total wait 8.4 s, reward -0.0, 1862 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 193/200 cologne1_x1.2_v2.rou.xml: total wait 27.8 s, reward -0.3, 1870 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 194/200 cologne1_x0.9_v2.rou.xml: total wait 10.0 s, reward -0.1, 1876 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 195/200 cologne1_x0.8_v0.rou.xml: total wait 8.0 s, reward -0.2, 1882 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 196/200 cologne1_x1.2_v1.rou.xml: total wait 21.6 s, reward -0.4, 1890 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 197/200 cologne1_x1.1_v1.rou.xml: total wait 16.7 s, reward -0.1, 1897 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 198/200 cologne1_x1.0_v2.rou.xml: total wait 13.5 s, reward 0.0, 1904 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 199/200 cologne1_x1.0_v0.rou.xml: total wait 11.4 s, reward -0.0, 1911 s elapsed
+[cologne1 ppo_64x64_variants seed0] ep 200/200 cologne1_x1.1_v3.rou.xml: total wait 16.0 s, reward -0.1, 1918 s elapsed
+[cologne1 ppo_64x64_variants seed0] validation after ep 200: total wait 12.9 s
+[cologne1 ppo_64x64_variants seed0] done in 32 min; best validation 12.0 s at episode 130

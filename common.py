@@ -34,6 +34,7 @@ from gymnasium import spaces
 import sumo_rl
 from sumo_rl import SumoEnvironment
 from stable_baselines3 import A2C, DQN, PPO
+from stable_baselines3.common.policies import ActorCriticPolicy
 from stable_baselines3.common.vec_env import VecEnv
 
 # Compatibility: torch >= 2.10 cannot th.load() straight from a zip-member
@@ -202,7 +203,8 @@ def write_actuated(scenario, path, max_gap=3.0, max_scale=2.0):
     ET.ElementTree(root).write(path)
 
 
-def run_episode(scenario, route_file, controller, sumo_seed=0, rng_seed=0, policy=None, actuated=None):
+def run_episode(scenario, route_file, controller, sumo_seed=0, rng_seed=0, policy=None, actuated=None,
+                on_step=None):
     """Simulate one hour and return trip_metrics.
 
     controller: "fixed"    - the city's signal plan from the .net.xml
@@ -236,6 +238,8 @@ def run_episode(scenario, route_file, controller, sumo_seed=0, rng_seed=0, polic
                 acts = ad.actions(policy(ad.obs(obs)))
             obs, _, dones, _ = env.step(acts)
             done = dones["__all__"]
+            if on_step:
+                on_step(env)          # e.g. per-intersection measurements
     finally:
         env.close()                       # SUMO writes the tripinfo file on close
     m = trip_metrics(trip)
@@ -350,7 +354,125 @@ class DoubleDQN(DQN):
         self.logger.record("train/loss", np.mean(losses))
 
 
-ALGOS = {"dqn": DQN, "ddqn": DoubleDQN, "ppo": PPO, "a2c": A2C}
+class PerLightMlpExtractor(th.nn.Module):
+    """Separate actor and critic MLPs for every traffic light (ablation of policy sharing, C2).
+
+    The light is identified by the one-hot ID at the end of the observation
+    (see Adapter). Each light's MLP only sees the observation without the ID.
+    The latent vector has one block per light and only the observation's own
+    light's block is non-zero, so the linear action/value heads that follow
+    act as one separate head per light: no weights are shared between lights
+    (apart from the heads' few bias terms).
+    """
+
+    def __init__(self, feature_dim, n_lights, net_arch, activation_fn):
+        super().__init__()
+        self.n_lights = n_lights
+
+        def mlp():
+            layers, prev = [], feature_dim - n_lights
+            for w in net_arch:
+                layers += [th.nn.Linear(prev, w), activation_fn()]
+                prev = w
+            return th.nn.Sequential(*layers)
+
+        self.pi = th.nn.ModuleList([mlp() for _ in range(n_lights)])
+        self.vf = th.nn.ModuleList([mlp() for _ in range(n_lights)])
+        self.latent_dim_pi = self.latent_dim_vf = n_lights * net_arch[-1]
+
+    def _route(self, nets, x):
+        obs, light = x[:, :-self.n_lights], x[:, -self.n_lights:]
+        return th.cat([net(obs) * light[:, i:i + 1] for i, net in enumerate(nets)], dim=1)
+
+    def forward(self, features):
+        return self.forward_actor(features), self.forward_critic(features)
+
+    def forward_actor(self, features):
+        return self._route(self.pi, features)
+
+    def forward_critic(self, features):
+        return self._route(self.vf, features)
+
+
+class IndependentPolicy(ActorCriticPolicy):
+    """Actor-critic policy with one independent network per traffic light."""
+
+    def __init__(self, *args, n_lights=1, **kwargs):
+        self.n_lights = n_lights
+        super().__init__(*args, **kwargs)
+
+    def _build_mlp_extractor(self):
+        arch = self.net_arch if isinstance(self.net_arch, list) else self.net_arch["pi"]
+        self.mlp_extractor = PerLightMlpExtractor(self.features_dim, self.n_lights, arch, self.activation_fn)
+
+
+class MaskedMlpExtractor(th.nn.Module):
+    """Standard shared actor/critic MLPs; the actor output also carries the one-hot
+    light ID, which MaskedActionHead uses to block phases the light does not have."""
+
+    def __init__(self, feature_dim, n_lights, net_arch, activation_fn):
+        super().__init__()
+        from stable_baselines3.common.torch_layers import MlpExtractor
+        self.n_lights = n_lights
+        self.inner = MlpExtractor(feature_dim, net_arch, activation_fn)
+        self.latent_dim_pi = self.inner.latent_dim_pi + n_lights
+        self.latent_dim_vf = self.inner.latent_dim_vf
+
+    def forward(self, features):
+        return self.forward_actor(features), self.forward_critic(features)
+
+    def forward_actor(self, features):
+        return th.cat([self.inner.forward_actor(features), features[:, -self.n_lights:]], dim=1)
+
+    def forward_critic(self, features):
+        return self.inner.forward_critic(features)
+
+
+class MaskedActionHead(th.nn.Module):
+    """Linear action head that gives phases a light does not have a logit of -1e9,
+    so they are never chosen and get no probability (valid-action masking)."""
+
+    def __init__(self, latent_dim, light_phases, n_actions):
+        super().__init__()
+        self.latent_dim = latent_dim
+        self.linear = th.nn.Linear(latent_dim, n_actions)
+        invalid = th.ones(len(light_phases), n_actions)
+        for k, n in enumerate(light_phases):
+            invalid[k, :n] = 0
+        self.register_buffer("penalty", -1e9 * invalid)
+
+    def forward(self, z):
+        latent, light = z[:, :self.latent_dim], z[:, self.latent_dim:]
+        return self.linear(latent) + light @ self.penalty
+
+
+class MaskedSharedPolicy(ActorCriticPolicy):
+    """Shared actor-critic policy with valid-action masking instead of a mod P_i."""
+
+    def __init__(self, *args, n_lights=1, light_phases=(), **kwargs):
+        self.n_lights, self.light_phases = n_lights, list(light_phases)
+        super().__init__(*args, **kwargs)
+
+    def _build_mlp_extractor(self):
+        arch = self.net_arch if isinstance(self.net_arch, list) else self.net_arch["pi"]
+        self.mlp_extractor = MaskedMlpExtractor(self.features_dim, self.n_lights, arch, self.activation_fn)
+
+    def _build(self, lr_schedule):
+        super()._build(lr_schedule)
+        from functools import partial
+        self.action_net = MaskedActionHead(self.mlp_extractor.inner.latent_dim_pi, self.light_phases,
+                                           int(self.action_space.n))
+        if self.ortho_init:
+            self.action_net.linear.apply(partial(self.init_weights, gain=0.01))
+        self.optimizer = self.optimizer_class(self.parameters(), lr=lr_schedule(1), **self.optimizer_kwargs)
+
+
+# "-ind"  = one independent network per traffic light instead of one shared network
+# "-mask" = shared network with valid-action masking instead of mapping a -> a mod P_i
+# (both only meaningful for multi-light scenarios).
+ALGOS = {"dqn": DQN, "ddqn": DoubleDQN, "ppo": PPO, "a2c": A2C, "ppo-ind": PPO, "a2c-ind": A2C,
+         "a2c-mask": A2C}
+MAIN_ALGOS = ["dqn", "ddqn", "ppo", "a2c"]
 
 
 def run_tag(algo, net, train_set):
@@ -377,9 +499,20 @@ def export_policy(model):
     p = model.policy
     if hasattr(p, "q_net"):
         layers = list(p.q_net.q_net)
+    elif isinstance(p.mlp_extractor, (PerLightMlpExtractor, MaskedMlpExtractor)):
+        return _ActorNet(copy.deepcopy(p.mlp_extractor), copy.deepcopy(p.action_net)).eval()
     else:
         layers = list(p.mlp_extractor.policy_net) + [p.action_net]
     return th.nn.Sequential(*copy.deepcopy(layers)).eval()
+
+
+class _ActorNet(th.nn.Module):
+    def __init__(self, extractor, head):
+        super().__init__()
+        self.extractor, self.head = extractor, head
+
+    def forward(self, x):
+        return self.head(self.extractor.forward_actor(x))
 
 
 def quantize_int8(module):

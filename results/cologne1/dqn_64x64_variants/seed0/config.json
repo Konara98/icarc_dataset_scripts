@@ -2,7 +2,7 @@
   "scenario": "cologne1",
   "algo": "dqn",
   "seed": 0,
-  "episodes": 20,
+  "episodes": 200,
   "val_every": 10,
   "net": [
     64,
@@ -64,9 +64,9 @@
     "torch": "2.14.1+cpu",
     "stable_baselines3": "2.9.0"
   },
-  "started": "2026-10-17 09:01:56",
-  "finished": "2026-10-17 09:03:40",
-  "train_seconds": 104,
-  "best_val_avg_total_wait": 37.49924335632118,
-  "best_episode": 10
+  "started": "2026-10-17 11:32:49",
+  "finished": "2026-10-17 12:15:14",
+  "train_seconds": 2545,
+  "best_val_avg_total_wait": 15.472724115719382,
+  "best_episode": 180
 }

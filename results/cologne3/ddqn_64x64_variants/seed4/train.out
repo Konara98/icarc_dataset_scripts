@@ -1,18 +1,221 @@
-Traceback (most recent call last):
-  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\train.py", line 29, in <module>
-    import common as C          # first: sets SUMO_HOME / libsumo before sumo-rl loads
-    ^^^^^^^^^^^^^^^^^^
-  File "D:\Research\Msc by Research\Dataset\icarc_dataset_scripts\common.py", line 18, in <module>
-    import sumo as _sumo
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\site-packages\sumo\__init__.py", line 30, in <module>
-    import importlib.metadata  # noqa
-    ^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\importlib\metadata\__init__.py", line 8, in <module>
-    import zipfile
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 10, in <module>
-    import shutil
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\shutil.py", line 23, in <module>
-    import bz2
-  File "C:\Users\User\AppData\Local\Programs\Python\Python312\Lib\bz2.py", line 17, in <module>
-    from _bz2 import BZ2Compressor, BZ2Decompressor
-KeyboardInterrupt
+[cologne3 ddqn_64x64_variants seed4] ep 1/200 cologne3_x0.9_v3.rou.xml: total wait 74.0 s, reward -7.2, 13 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 2/200 cologne3_x1.0_v1.rou.xml: total wait 90.4 s, reward -3.2, 29 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 3/200 cologne3_x0.8_v3.rou.xml: total wait 40.4 s, reward -2.0, 42 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 4/200 cologne3_x1.1_v0.rou.xml: total wait 99.6 s, reward -3.4, 59 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 5/200 cologne3_x1.1_v3.rou.xml: total wait 75.8 s, reward -7.0, 77 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 6/200 cologne3_x0.8_v2.rou.xml: total wait 36.0 s, reward -2.1, 90 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 7/200 cologne3_x0.8_v1.rou.xml: total wait 43.8 s, reward -9.2, 104 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 8/200 cologne3_x1.1_v1.rou.xml: total wait 72.5 s, reward -7.4, 121 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 9/200 cologne3_x0.8_v0.rou.xml: total wait 57.4 s, reward -5.4, 135 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 10/200 cologne3_x0.9_v2.rou.xml: total wait 34.8 s, reward -0.4, 148 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 10: total wait 121.4 s  <- best so far, saved
+[cologne3 ddqn_64x64_variants seed4] ep 11/200 cologne3_x1.0_v0.rou.xml: total wait 35.2 s, reward -7.3, 232 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 12/200 cologne3_x0.9_v0.rou.xml: total wait 43.5 s, reward -2.6, 245 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 13/200 cologne3_x1.0_v3.rou.xml: total wait 42.9 s, reward -1.6, 259 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 14/200 cologne3_x1.2_v0.rou.xml: total wait 93.6 s, reward -244.7, 279 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 15/200 cologne3_x1.2_v2.rou.xml: total wait 722.8 s, reward -1259.1, 317 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 16/200 cologne3_x0.9_v1.rou.xml: total wait 25.7 s, reward -3.9, 329 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 17/200 cologne3_x1.1_v2.rou.xml: total wait 37.0 s, reward -1.8, 343 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 18/200 cologne3_x1.0_v2.rou.xml: total wait 20.8 s, reward -1.6, 355 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 19/200 cologne3_x1.2_v3.rou.xml: total wait 48.9 s, reward -4.1, 370 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 20/200 cologne3_x1.2_v1.rou.xml: total wait 40.4 s, reward -4.6, 386 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 20: total wait 59.0 s  <- best so far, saved
+[cologne3 ddqn_64x64_variants seed4] ep 21/200 cologne3_x0.8_v3.rou.xml: total wait 21.6 s, reward -0.9, 441 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 22/200 cologne3_x1.0_v0.rou.xml: total wait 35.9 s, reward -133.8, 454 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 23/200 cologne3_x0.9_v2.rou.xml: total wait 23.6 s, reward -0.1, 467 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 24/200 cologne3_x0.8_v0.rou.xml: total wait 21.1 s, reward -11.3, 477 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 25/200 cologne3_x1.2_v2.rou.xml: total wait 67.3 s, reward -2.6, 494 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 26/200 cologne3_x1.1_v0.rou.xml: total wait 741.5 s, reward -1184.2, 528 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 27/200 cologne3_x0.9_v0.rou.xml: total wait 16.6 s, reward -1.0, 540 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 28/200 cologne3_x1.2_v3.rou.xml: total wait 66.9 s, reward -3.5, 556 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 29/200 cologne3_x0.8_v2.rou.xml: total wait 24.4 s, reward -2.9, 568 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 30/200 cologne3_x1.1_v1.rou.xml: total wait 588.3 s, reward -973.9, 599 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 30: total wait 66.1 s
+[cologne3 ddqn_64x64_variants seed4] ep 31/200 cologne3_x1.0_v2.rou.xml: total wait 92.2 s, reward -1.4, 661 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 32/200 cologne3_x0.9_v1.rou.xml: total wait 640.5 s, reward -926.0, 690 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 33/200 cologne3_x0.8_v1.rou.xml: total wait 23.4 s, reward -1.1, 701 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 34/200 cologne3_x1.2_v1.rou.xml: total wait 39.1 s, reward -2.2, 716 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 35/200 cologne3_x1.0_v1.rou.xml: total wait 19.2 s, reward -4.7, 729 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 36/200 cologne3_x1.0_v3.rou.xml: total wait 24.0 s, reward -1.9, 741 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 37/200 cologne3_x1.1_v2.rou.xml: total wait 52.1 s, reward -0.7, 755 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 38/200 cologne3_x1.1_v3.rou.xml: total wait 28.6 s, reward -1.0, 769 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 39/200 cologne3_x1.2_v0.rou.xml: total wait 27.8 s, reward -4.2, 783 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 40/200 cologne3_x0.9_v3.rou.xml: total wait 15.0 s, reward -0.2, 794 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 40: total wait 28.5 s  <- best so far, saved
+[cologne3 ddqn_64x64_variants seed4] ep 41/200 cologne3_x0.9_v1.rou.xml: total wait 9.9 s, reward -0.4, 845 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 42/200 cologne3_x0.9_v3.rou.xml: total wait 10.3 s, reward -0.3, 857 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 43/200 cologne3_x1.1_v3.rou.xml: total wait 18.2 s, reward -1.2, 870 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 44/200 cologne3_x1.0_v0.rou.xml: total wait 15.7 s, reward -1.8, 882 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 45/200 cologne3_x0.8_v2.rou.xml: total wait 15.7 s, reward -1.6, 892 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 46/200 cologne3_x1.1_v2.rou.xml: total wait 26.4 s, reward -0.9, 906 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 47/200 cologne3_x1.1_v1.rou.xml: total wait 21.7 s, reward -2.3, 920 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 48/200 cologne3_x1.2_v0.rou.xml: total wait 651.1 s, reward -1042.7, 956 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 49/200 cologne3_x0.9_v0.rou.xml: total wait 12.6 s, reward -1.1, 967 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 50/200 cologne3_x0.8_v0.rou.xml: total wait 11.6 s, reward -1.6, 977 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 50: total wait 13.6 s  <- best so far, saved
+[cologne3 ddqn_64x64_variants seed4] ep 51/200 cologne3_x1.0_v3.rou.xml: total wait 14.4 s, reward -0.0, 1025 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 52/200 cologne3_x1.0_v1.rou.xml: total wait 16.7 s, reward -0.1, 1037 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 53/200 cologne3_x0.8_v3.rou.xml: total wait 11.8 s, reward -0.3, 1047 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 54/200 cologne3_x1.2_v2.rou.xml: total wait 27.5 s, reward -0.2, 1061 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 55/200 cologne3_x0.9_v2.rou.xml: total wait 11.1 s, reward -0.6, 1071 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 56/200 cologne3_x1.1_v0.rou.xml: total wait 636.9 s, reward -941.2, 1104 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 57/200 cologne3_x1.2_v1.rou.xml: total wait 35.0 s, reward -126.7, 1119 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 58/200 cologne3_x0.8_v1.rou.xml: total wait 9.1 s, reward -0.3, 1129 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 59/200 cologne3_x1.2_v3.rou.xml: total wait 31.7 s, reward -0.3, 1144 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 60/200 cologne3_x1.0_v2.rou.xml: total wait 12.3 s, reward -0.2, 1156 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 60: total wait 156.4 s
+[cologne3 ddqn_64x64_variants seed4] ep 61/200 cologne3_x0.9_v1.rou.xml: total wait 8.5 s, reward -0.2, 1220 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 62/200 cologne3_x0.9_v3.rou.xml: total wait 9.1 s, reward -0.1, 1231 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 63/200 cologne3_x1.0_v1.rou.xml: total wait 670.8 s, reward -984.2, 1263 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 64/200 cologne3_x1.0_v0.rou.xml: total wait 10.9 s, reward -0.4, 1275 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 65/200 cologne3_x0.8_v1.rou.xml: total wait 7.5 s, reward -0.1, 1285 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 66/200 cologne3_x1.1_v3.rou.xml: total wait 18.9 s, reward -0.2, 1298 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 67/200 cologne3_x0.8_v0.rou.xml: total wait 8.4 s, reward -2.4, 1308 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 68/200 cologne3_x1.2_v2.rou.xml: total wait 94.2 s, reward -614.1, 1325 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 69/200 cologne3_x1.0_v2.rou.xml: total wait 13.2 s, reward -0.0, 1336 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 70/200 cologne3_x0.9_v0.rou.xml: total wait 7.9 s, reward -0.2, 1348 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 70: total wait 13.9 s
+[cologne3 ddqn_64x64_variants seed4] ep 71/200 cologne3_x1.2_v0.rou.xml: total wait 21.1 s, reward -0.7, 1396 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 72/200 cologne3_x1.2_v1.rou.xml: total wait 31.2 s, reward -0.6, 1411 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 73/200 cologne3_x1.1_v0.rou.xml: total wait 23.2 s, reward -46.6, 1424 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 74/200 cologne3_x1.2_v3.rou.xml: total wait 661.6 s, reward -1000.1, 1460 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 75/200 cologne3_x0.8_v2.rou.xml: total wait 7.0 s, reward -0.4, 1470 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 76/200 cologne3_x1.1_v2.rou.xml: total wait 675.3 s, reward -1048.2, 1504 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 77/200 cologne3_x1.0_v3.rou.xml: total wait 529.1 s, reward -855.6, 1534 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 78/200 cologne3_x1.1_v1.rou.xml: total wait 628.7 s, reward -995.0, 1569 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 79/200 cologne3_x0.8_v3.rou.xml: total wait 7.6 s, reward -0.4, 1581 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 80/200 cologne3_x0.9_v2.rou.xml: total wait 7.8 s, reward -0.3, 1594 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 80: total wait 18.8 s
+[cologne3 ddqn_64x64_variants seed4] ep 81/200 cologne3_x0.9_v2.rou.xml: total wait 8.0 s, reward -0.0, 1644 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 82/200 cologne3_x1.1_v2.rou.xml: total wait 18.9 s, reward -0.4, 1656 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 83/200 cologne3_x1.0_v0.rou.xml: total wait 12.5 s, reward -0.2, 1669 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 84/200 cologne3_x0.9_v1.rou.xml: total wait 9.2 s, reward -0.3, 1680 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 85/200 cologne3_x1.0_v3.rou.xml: total wait 13.2 s, reward -0.0, 1693 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 86/200 cologne3_x1.2_v3.rou.xml: total wait 304.5 s, reward -945.4, 1717 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 87/200 cologne3_x1.1_v3.rou.xml: total wait 16.9 s, reward -0.5, 1729 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 88/200 cologne3_x1.0_v1.rou.xml: total wait 14.2 s, reward -3.3, 1741 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 89/200 cologne3_x1.2_v0.rou.xml: total wait 22.8 s, reward -3.6, 1755 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 90/200 cologne3_x1.0_v2.rou.xml: total wait 740.5 s, reward -974.6, 1789 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 90: total wait 13.0 s  <- best so far, saved
+[cologne3 ddqn_64x64_variants seed4] ep 91/200 cologne3_x1.2_v1.rou.xml: total wait 652.9 s, reward -1215.8, 1858 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 92/200 cologne3_x0.8_v3.rou.xml: total wait 7.2 s, reward -0.1, 1869 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 93/200 cologne3_x1.1_v1.rou.xml: total wait 15.2 s, reward -0.2, 1882 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 94/200 cologne3_x0.8_v0.rou.xml: total wait 8.0 s, reward -0.0, 1892 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 95/200 cologne3_x1.2_v2.rou.xml: total wait 24.7 s, reward -0.8, 1906 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 96/200 cologne3_x0.8_v1.rou.xml: total wait 8.6 s, reward -0.0, 1917 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 97/200 cologne3_x0.8_v2.rou.xml: total wait 7.1 s, reward -0.1, 1929 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 98/200 cologne3_x1.1_v0.rou.xml: total wait 28.4 s, reward -102.3, 1942 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 99/200 cologne3_x0.9_v3.rou.xml: total wait 8.5 s, reward -0.1, 1953 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 100/200 cologne3_x0.9_v0.rou.xml: total wait 7.8 s, reward -0.0, 1964 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 100: total wait 10.6 s  <- best so far, saved
+[cologne3 ddqn_64x64_variants seed4] ep 101/200 cologne3_x0.8_v3.rou.xml: total wait 7.1 s, reward -0.0, 2008 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 102/200 cologne3_x1.0_v2.rou.xml: total wait 13.5 s, reward -0.5, 2020 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 103/200 cologne3_x0.9_v1.rou.xml: total wait 7.8 s, reward -1.0, 2032 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 104/200 cologne3_x1.0_v1.rou.xml: total wait 16.5 s, reward -0.5, 2044 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 105/200 cologne3_x1.1_v2.rou.xml: total wait 17.2 s, reward -0.2, 2057 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 106/200 cologne3_x0.8_v0.rou.xml: total wait 6.2 s, reward -0.1, 2067 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 107/200 cologne3_x1.1_v3.rou.xml: total wait 664.7 s, reward -986.4, 2099 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 108/200 cologne3_x1.2_v1.rou.xml: total wait 22.0 s, reward -0.3, 2113 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 109/200 cologne3_x1.0_v3.rou.xml: total wait 11.9 s, reward -0.1, 2124 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 110/200 cologne3_x0.8_v1.rou.xml: total wait 6.6 s, reward -0.1, 2135 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 110: total wait 14.3 s
+[cologne3 ddqn_64x64_variants seed4] ep 111/200 cologne3_x0.9_v0.rou.xml: total wait 6.9 s, reward -0.2, 2181 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 112/200 cologne3_x1.1_v0.rou.xml: total wait 615.9 s, reward -970.8, 2213 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 113/200 cologne3_x1.1_v1.rou.xml: total wait 15.7 s, reward -0.2, 2226 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 114/200 cologne3_x0.8_v2.rou.xml: total wait 7.0 s, reward -0.0, 2236 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 115/200 cologne3_x0.9_v2.rou.xml: total wait 9.0 s, reward -0.0, 2247 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 116/200 cologne3_x1.0_v0.rou.xml: total wait 14.1 s, reward -0.1, 2259 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 117/200 cologne3_x1.2_v2.rou.xml: total wait 23.9 s, reward -4.5, 2274 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 118/200 cologne3_x1.2_v0.rou.xml: total wait 21.4 s, reward -1.3, 2287 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 119/200 cologne3_x1.2_v3.rou.xml: total wait 29.0 s, reward -4.0, 2301 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 120/200 cologne3_x0.9_v3.rou.xml: total wait 9.8 s, reward -0.1, 2313 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 120: total wait 256.1 s
+[cologne3 ddqn_64x64_variants seed4] ep 121/200 cologne3_x1.2_v3.rou.xml: total wait 26.9 s, reward -1.4, 2401 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 122/200 cologne3_x0.8_v2.rou.xml: total wait 7.0 s, reward -0.2, 2412 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 123/200 cologne3_x1.0_v1.rou.xml: total wait 648.1 s, reward -975.5, 2443 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 124/200 cologne3_x0.9_v2.rou.xml: total wait 9.9 s, reward -0.2, 2454 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 125/200 cologne3_x1.1_v2.rou.xml: total wait 18.2 s, reward -0.0, 2466 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 126/200 cologne3_x0.9_v0.rou.xml: total wait 9.7 s, reward -0.0, 2481 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 127/200 cologne3_x1.2_v2.rou.xml: total wait 25.1 s, reward -0.5, 2494 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 128/200 cologne3_x1.1_v3.rou.xml: total wait 14.7 s, reward -0.3, 2507 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 129/200 cologne3_x1.2_v0.rou.xml: total wait 615.6 s, reward -1062.5, 2541 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 130/200 cologne3_x1.2_v1.rou.xml: total wait 301.1 s, reward -950.6, 2567 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 130: total wait 130.0 s
+[cologne3 ddqn_64x64_variants seed4] ep 131/200 cologne3_x1.1_v1.rou.xml: total wait 18.3 s, reward -0.3, 2633 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 132/200 cologne3_x0.9_v1.rou.xml: total wait 9.5 s, reward -0.3, 2644 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 133/200 cologne3_x0.8_v0.rou.xml: total wait 7.6 s, reward -0.6, 2655 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 134/200 cologne3_x1.0_v2.rou.xml: total wait 14.3 s, reward -0.0, 2667 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 135/200 cologne3_x0.9_v3.rou.xml: total wait 7.5 s, reward -0.2, 2678 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 136/200 cologne3_x0.8_v3.rou.xml: total wait 6.3 s, reward -0.6, 2688 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 137/200 cologne3_x0.8_v1.rou.xml: total wait 6.8 s, reward -1.1, 2699 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 138/200 cologne3_x1.1_v0.rou.xml: total wait 19.7 s, reward -6.9, 2712 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 139/200 cologne3_x1.0_v3.rou.xml: total wait 14.2 s, reward -0.2, 2724 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 140/200 cologne3_x1.0_v0.rou.xml: total wait 11.5 s, reward -0.0, 2736 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 140: total wait 148.3 s
+[cologne3 ddqn_64x64_variants seed4] ep 141/200 cologne3_x1.0_v1.rou.xml: total wait 14.1 s, reward -0.3, 2803 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 142/200 cologne3_x1.2_v2.rou.xml: total wait 97.4 s, reward -611.3, 2820 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 143/200 cologne3_x0.8_v3.rou.xml: total wait 24.0 s, reward -0.0, 2832 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 144/200 cologne3_x1.1_v2.rou.xml: total wait 15.5 s, reward 0.0, 2844 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 145/200 cologne3_x0.9_v2.rou.xml: total wait 10.5 s, reward -0.2, 2855 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 146/200 cologne3_x1.1_v3.rou.xml: total wait 24.6 s, reward -2.8, 2868 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 147/200 cologne3_x1.2_v1.rou.xml: total wait 28.5 s, reward -0.6, 2882 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 148/200 cologne3_x0.8_v1.rou.xml: total wait 10.4 s, reward -0.0, 2892 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 149/200 cologne3_x0.8_v0.rou.xml: total wait 6.7 s, reward -0.3, 2903 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 150/200 cologne3_x1.0_v3.rou.xml: total wait 12.1 s, reward -0.3, 2915 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 150: total wait 17.9 s
+[cologne3 ddqn_64x64_variants seed4] ep 151/200 cologne3_x1.0_v2.rou.xml: total wait 12.0 s, reward -0.2, 2964 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 152/200 cologne3_x0.8_v2.rou.xml: total wait 7.6 s, reward -0.3, 2975 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 153/200 cologne3_x1.0_v0.rou.xml: total wait 11.1 s, reward -0.0, 2987 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 154/200 cologne3_x0.9_v0.rou.xml: total wait 8.5 s, reward -0.1, 2998 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 155/200 cologne3_x1.2_v3.rou.xml: total wait 27.2 s, reward -0.3, 3013 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 156/200 cologne3_x1.2_v0.rou.xml: total wait 25.0 s, reward -0.1, 3027 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 157/200 cologne3_x1.1_v1.rou.xml: total wait 32.5 s, reward -0.2, 3041 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 158/200 cologne3_x0.9_v3.rou.xml: total wait 8.8 s, reward -0.2, 3052 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 159/200 cologne3_x0.9_v1.rou.xml: total wait 9.2 s, reward -0.3, 3064 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 160/200 cologne3_x1.1_v0.rou.xml: total wait 19.0 s, reward -1.1, 3077 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 160: total wait 59.6 s
+[cologne3 ddqn_64x64_variants seed4] ep 161/200 cologne3_x1.0_v2.rou.xml: total wait 609.6 s, reward -921.1, 3152 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 162/200 cologne3_x0.8_v1.rou.xml: total wait 6.0 s, reward -0.5, 3162 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 163/200 cologne3_x0.8_v3.rou.xml: total wait 6.0 s, reward -0.1, 3172 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 164/200 cologne3_x1.2_v0.rou.xml: total wait 19.6 s, reward -0.6, 3186 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 165/200 cologne3_x1.0_v1.rou.xml: total wait 10.6 s, reward -0.1, 3198 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 166/200 cologne3_x1.1_v0.rou.xml: total wait 13.8 s, reward -0.1, 3210 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 167/200 cologne3_x0.9_v2.rou.xml: total wait 12.5 s, reward -0.2, 3221 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 168/200 cologne3_x1.2_v3.rou.xml: total wait 50.3 s, reward -0.3, 3236 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 169/200 cologne3_x1.2_v1.rou.xml: total wait 94.5 s, reward -315.3, 3254 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 170/200 cologne3_x0.9_v3.rou.xml: total wait 8.2 s, reward -0.2, 3266 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 170: total wait 187.8 s
+[cologne3 ddqn_64x64_variants seed4] ep 171/200 cologne3_x1.0_v3.rou.xml: total wait 11.0 s, reward -0.0, 3337 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 172/200 cologne3_x1.1_v3.rou.xml: total wait 603.2 s, reward -994.7, 3369 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 173/200 cologne3_x1.1_v2.rou.xml: total wait 535.4 s, reward -953.3, 3400 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 174/200 cologne3_x1.0_v0.rou.xml: total wait 591.1 s, reward -990.7, 3430 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 175/200 cologne3_x1.1_v1.rou.xml: total wait 13.9 s, reward -0.4, 3443 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 176/200 cologne3_x0.8_v0.rou.xml: total wait 6.4 s, reward -0.0, 3454 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 177/200 cologne3_x1.2_v2.rou.xml: total wait 58.5 s, reward -0.4, 3470 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 178/200 cologne3_x0.9_v1.rou.xml: total wait 13.5 s, reward -11.8, 3482 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 179/200 cologne3_x0.8_v2.rou.xml: total wait 679.1 s, reward -965.0, 3510 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 180/200 cologne3_x0.9_v0.rou.xml: total wait 9.2 s, reward -0.1, 3522 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 180: total wait 48.9 s
+[cologne3 ddqn_64x64_variants seed4] ep 181/200 cologne3_x0.9_v3.rou.xml: total wait 16.4 s, reward -0.7, 3576 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 182/200 cologne3_x1.1_v1.rou.xml: total wait 15.9 s, reward -0.3, 3589 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 183/200 cologne3_x0.9_v2.rou.xml: total wait 10.2 s, reward -0.2, 3600 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 184/200 cologne3_x1.1_v3.rou.xml: total wait 23.4 s, reward -0.4, 3613 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 185/200 cologne3_x1.2_v1.rou.xml: total wait 42.4 s, reward -0.6, 3629 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 186/200 cologne3_x0.8_v0.rou.xml: total wait 6.7 s, reward -0.1, 3640 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 187/200 cologne3_x1.1_v2.rou.xml: total wait 17.8 s, reward -0.0, 3653 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 188/200 cologne3_x0.9_v0.rou.xml: total wait 7.7 s, reward -0.1, 3664 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 189/200 cologne3_x1.1_v0.rou.xml: total wait 22.9 s, reward -1.1, 3677 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 190/200 cologne3_x0.8_v3.rou.xml: total wait 9.6 s, reward -0.1, 3688 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 190: total wait 14.2 s
+[cologne3 ddqn_64x64_variants seed4] ep 191/200 cologne3_x1.0_v0.rou.xml: total wait 10.7 s, reward -0.0, 3735 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 192/200 cologne3_x1.0_v2.rou.xml: total wait 17.7 s, reward -1.3, 3748 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 193/200 cologne3_x1.0_v1.rou.xml: total wait 11.9 s, reward -0.0, 3760 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 194/200 cologne3_x1.2_v3.rou.xml: total wait 35.6 s, reward -1.7, 3776 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 195/200 cologne3_x0.8_v2.rou.xml: total wait 699.5 s, reward -922.3, 3806 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 196/200 cologne3_x0.8_v1.rou.xml: total wait 7.3 s, reward 0.0, 3817 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 197/200 cologne3_x0.9_v1.rou.xml: total wait 8.5 s, reward -0.0, 3829 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 198/200 cologne3_x1.2_v2.rou.xml: total wait 26.9 s, reward -0.5, 3843 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 199/200 cologne3_x1.0_v3.rou.xml: total wait 12.0 s, reward -2.0, 3856 s elapsed
+[cologne3 ddqn_64x64_variants seed4] ep 200/200 cologne3_x1.2_v0.rou.xml: total wait 25.0 s, reward -3.9, 3869 s elapsed
+[cologne3 ddqn_64x64_variants seed4] validation after ep 200: total wait 17.6 s
+[cologne3 ddqn_64x64_variants seed4] done in 65 min; best validation 10.6 s at episode 100

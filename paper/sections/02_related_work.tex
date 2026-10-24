@@ -1,0 +1,34 @@
+\section{Related Work}
+\label{sec:related}
+
+DRL controllers select signal phases from queue, density and pressure features, using value-based and actor-critic learners at single intersections and across networks~\cite{michailidis2025review}. LibSignal~\cite{mei2024libsignal} compares ten such methods on common datasets in the SUMO~\cite{lopez2018sumo} and CityFlow simulators, and the RESCO benchmark~\cite{ault2021resco} standardized evaluation on real-city SUMO scenarios of Cologne and Ingolstadt, where independent DQN and PPO learners outperformed more specialized coordinated methods. Both compare algorithms on the demand they were trained on. Generalization has been studied for other kinds of change: UniTSA~\cite{wang2024unitsa} uses a junction matrix and traffic-state augmentation so that one policy works across intersections with different layouts, and $\pi$-Light~\cite{gu2024pilight} learns compact programmatic policies that transfer across intersections in different cities. Kwesiga et al.~\cite{kwesiga2026robustness} showed that a controller trained on one origin--destination pattern generalizes only to similar demand, while diverse training patterns improve robustness, and Sim2Signal~\cite{rafi2026sim2signal} benchmarks the simulation-to-reality gap. Compact controllers for limited roadside hardware have also been proposed~\cite{xing2022tinylight,gu2024pilight}.
+
+Table~\ref{tab:related} summarizes these studies. With the exception of the sim-to-real benchmark, they either test generalization with a single proposed method or compare several algorithms without a generalization test. To our knowledge, no prior study compares several DRL algorithm families under one controlled protocol on real-city scenarios, tests every learner on demand levels unseen in training, and isolates the effect of each training component with an ablation; this combination is the novelty of the present work.
+
+\begin{table}[t]
+\caption{Comparison with Related Studies}
+\label{tab:related}
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{|l|>{\raggedright\arraybackslash}p{3.0cm}|c|c|}
+\hline
+\textbf{Study} & \textbf{Approach} & \textbf{\makecell{Gen.\\test\textsuperscript{a}}} & \textbf{\makecell{Alg.\\comp.\textsuperscript{b}}} \\
+\hline
+RESCO~\cite{ault2021resco}, 2021 & IDQN, IPPO, MPLight, FMA2C & $\times$ & \checkmark \\
+\hline
+LibSignal~\cite{mei2024libsignal}, 2024 & Open library, ten methods & $\times$ & \checkmark \\
+\hline
+UniTSA~\cite{wang2024unitsa}, 2024 & Universal RL with state augmentation & \checkmark & $\times$ \\
+\hline
+$\pi$-Light~\cite{gu2024pilight}, 2024 & Programmatic policy & \checkmark & $\times$ \\
+\hline
+Kwesiga et al.~\cite{kwesiga2026robustness}, 2026 & RL with ring-barrier phases & \checkmark & $\times$ \\
+\hline
+Sim2Signal~\cite{rafi2026sim2signal}, 2026 & Sim-to-real benchmark & \checkmark & \checkmark \\
+\hline
+This work & DQN, DDQN, PPO, A2C & \checkmark & \checkmark \\
+\hline
+\end{tabular}
+\tablenote{\textsuperscript{a}Tested on conditions not seen in training. \textsuperscript{b}Several RL algorithms compared under one protocol. \todo{verify every tick against the full papers}}
+\end{table}

@@ -1,0 +1,30 @@
+\section{Problem Formulation}
+\label{sec:problem}
+
+A road network contains a set $\mathcal{I}$ of signalized intersections, each controlled by an agent that decides every $\Delta = 5$\,s, giving $T = 720$ decisions in a one-hour episode. The observation of agent $i$ at decision step $t$ is
+\begin{equation}
+  s^i_t = \big[\,\mathbf{e}(p^i_t),\; g^i_t,\; \rho^i_{1,t},\dots,\rho^i_{n_i,t},\; q^i_{1,t},\dots,q^i_{n_i,t}\,\big],
+\end{equation}
+where $\mathbf{e}(p^i_t)$ is a one-hot encoding of the current green phase $p^i_t$, $g^i_t \in \{0,1\}$ indicates whether the minimum green time has elapsed, and $\rho^i_{l,t}$ and $q^i_{l,t}$ are the number of vehicles and of halted vehicles on incoming lane $l$ of the $n_i$ incoming lanes, divided by the lane's vehicle capacity. For cologne1, with 4 green phases and 8 lanes, $s^i_t \in [0,1]^{21}$.
+
+The action $a^i_t \in \{0,\dots,P_i-1\}$ selects one of the $P_i$ green phases of the intersection's signal program, in the order defined in that program. Action timing follows sumo-rl: if $a^i_t$ equals the current phase, or less than the yellow time $y$ plus the minimum green $g_{\min} = 5$\,s has passed since the last phase change, the current green is kept for another $\Delta$. Otherwise the signal shows a yellow state for $y$ seconds, in which every movement that loses its green turns yellow, and then switches to the chosen green. The yellow time $y$ equals that of the city's own plan (5\,s for cologne1, 3\,s otherwise). Safety follows from the action set: the agent only chooses among the green phases of the original signal program, each of which gives green to a conflict-free set of movements, and every change passes through the yellow state, so conflicting movements never receive green together.
+
+Let $\omega_{v,l}(t)$ be the waiting time vehicle $v$ has accumulated while on lane $l$, where SUMO counts a vehicle as waiting while its speed is at most 0.1\,m/s. The waiting load of intersection $i$ is
+\begin{equation}
+  W^i_t = \sum_{l=1}^{n_i} \sum_{v \in \mathcal{V}_l(t)} \omega_{v,l}(t),
+\end{equation}
+where $\mathcal{V}_l(t)$ are the vehicles on incoming lane $l$ at step $t$, and the reward is
+\begin{equation}
+  r^i_t = \big(W^i_{t-1} - W^i_t\big)/100,
+  \label{eq:reward}
+\end{equation}
+the division by 100 only scaling the reward. A vehicle entering an incoming lane adds nothing to $W^i$; every halted vehicle adds up to $\Delta$ per step; and a vehicle crossing the stop line removes its accumulated waiting. The reward is therefore positive when long-waiting vehicles are served and negative while queues grow. Vehicles still waiting to enter the network, or queued upstream of the incoming lanes, are not part of $W^i$.
+
+The reward is aligned with the evaluation metric because the waiting added to $W^i$ during an episode corresponds to the halting time of vehicles on the intersection's approaches, which is the on-road part of the average total waiting time defined below. It is local and myopic, however: an agent cannot see spillback from a neighbouring intersection or vehicles held outside the network, and under heavy congestion, when queued vehicles cannot leave, every action yields a similar negative reward, which weakens the learning signal. A policy may therefore favour clearing its own approaches in the short term at the expense of the wider network.
+
+Performance is measured by the average total waiting time per vehicle,
+\begin{equation}
+  \bar{w} = \frac{1}{|\mathcal{V}|} \sum_{v \in \mathcal{V}} \big(d_v + h_v\big),
+  \label{eq:wbar}
+\end{equation}
+where $\mathcal{V}$ contains every vehicle whose scheduled departure lies within the simulated hour, $d_v$ is its insertion delay (actual minus scheduled departure, or the time until the end of the hour if it never enters), and $h_v$ is its time halted on the road until it arrives or the hour ends. A vehicle can contribute to both terms, first while waiting to enter and then while halted, but the two periods do not overlap, so nothing is counted twice. Vehicles that have not finished their trip are counted with the waiting accumulated so far. Each agent maximizes its discounted return $\mathbb{E}[\sum_t \gamma^t r^i_t]$ on training demand $\mathcal{D}_{\text{train}}$, and the controllers are judged by $\bar{w}$ on test demand $\mathcal{D}_{\text{test}}$ that differs from it; model selection uses validation demand drawn from $\mathcal{D}_{\text{train}}$ only.
